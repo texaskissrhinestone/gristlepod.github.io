@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title></title>
+<title>Pat's Homepage</title>
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="https://0ekekddddd.neocities.org/favicon.png">
-<meta name="description" content="0ekekddddd">
+<meta name="description" content="">
 <meta name="author" content="Pat">
 <link rel="stylesheet" href="/music/pageStyle.css">
+<style>
+li {
+  list-style-image: url('/music/images/tune_icon.png');
+  padding-right:0px;
+  padding-left:0px;
+}
+</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
@@ -23,7 +30,7 @@ $(window).load(function() {
 	len = tracks.length;
 	audio[0].volume = 1;
 	audio[0].play();
-	tracklist.find('a normal').click(function(e) {
+	tracklist.find('a').click(function(e) {
       e.preventDefault();
       link = $(this);
       current = link.parent().index();
@@ -58,7 +65,7 @@ function run(link, player) {
       <map name="layout_header">
         <area shape="rect" alt="[Home]" coords="395,7,647,84" href="/">
       </map>
-      <div class="layout_header"><img src="/music/layout_pieces/layout_header.gif" style="width:660px;height:80px;border:0;" alt="" usemap="#layout_header"></div>
+      <div class="layout_header"><img src="/layout/layout_pieces/layout_header_transparent.gif" style="width:660px;border:0;" alt="" usemap="#layout_header"></div>
     </td>
   </tr>
   <tr>
@@ -68,15 +75,18 @@ function run(link, player) {
       <div class="leftbox">
         <p>Production, mixing, visual renders made by yours truly.</p>
         <p>My music is remix-friendly. All I ask is that my work is not reposted on Spotify and that I'm given proper credit.</p>
-      </div>
+      </div><br>
+      <center><img src="/music/images/openmpt-button01.png" alt="OpenMPT User."></center>
     </td>
     <td class="rightside">
+      <br>
       <center><audio id="audio" controls></audio></center>
-      <ul id="tracklist">
-        <li><a href="/music/audios/PasteMarchDivision.flac" id=""><normal>Paste March Division</normal></a> 2023.3.3 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="/music/images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
+    <ul id="tracklist">
+       <li><a href="/music/audios/PasteMarchDivision.flac">Paste March Division</a> 2023.3.3 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="/music/images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
       </ul>
       <center>That's the end of the library!</center>
       <hr>
+      <center><img src="/music/images/cover.png" alt="The cover of my 4ever collection." style="width:50%;"></center>
       <p>Listen on your own time @ <a href="https://soundcloud.com/0ekekddddd">Soundcloud</a>.</p>
     </td>
     <td class="layout-rightborder">
