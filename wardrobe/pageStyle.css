@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'gothic';
+  src: url('/fonts/proclamate_light.ttf');
+}
+body{
+  background-image:url("/layout/backgrounds/2.gif");
+  font-family: "MS PGothic", sans-serif;
+  font-size:12px;
+  margin-top: 0px;
+  margin: 0 auto;
+}
+table{
+  border-collapse: collapse;
+  vertical-align:top;
+}
+td {
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style-type: none;
+}
+hr {
+  border: 0;
+  height: 1px;
+  margin-bottom:5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+a{
+  color:#616161;
+}
+a:hover{
+  color:#000000;
+}
+#label, h3{
+  font-family:gothic;
+  font-size:15px;
+}
+p, h1, h2, h3, details{
+  padding-right:10px;
+  padding-left:10px;
+}
+details{
+  cursor:text;
+  color:#636363;
+}
+summary{
+  color:#000000;
+  cursor:pointer;
+}
+iframe{
+  overflow:hidden;
+  border:none;
+  height:345px;
+}
+.body{
+  margin: 0 auto;
+  width:644px;
+}
+.body td{
+  vertical-align: top;
+  position:relative;
+}
+.layout_header{
+  background-image:url("/wardrobe/layout_pieces/layout_header.gif");
+  background-repeat:no-repeat;
+  background-position:bottom;
+}
+.layout-leftborder{
+  background-image:url("/wardrobe/layout_pieces/layout_leftborder.gif");
+  min-width:14px;
+}
+.layout-rightborder{
+  background-image:url("/wardrobe/layout_pieces/layout_rightborder.gif");
+  min-width:10px;
+}
+.leftside{
+  background-image:url("/wardrobe/layout_pieces/leftside_bgpattern.gif");
+  box-sizing:border-box;
+  background-repeat:repeat-y;
+  width:317px;
+}
+.leftside table{
+  border-collapse:separate;
+  margin:0 auto;
+  width:100%;
+}
+.leftbox{
+  background: linear-gradient(0deg, rgba(218,218,218,1) 0%, rgba(255,255,255,1) 38%);
+  box-shadow: 4px 3px 9px -4px rgba(0,0,0,0.72);
+  border:#949494 solid 1px;
+  box-sizing:border-box;
+  border-radius:4px;
+  font-size:12px;
+  padding:1px;
+  margin:0 auto;
+  width:170px;
+}
+.rightside{
+  background-image:url("/wardrobe/layout_pieces/rightside_bgpattern.gif");
+  background-repeat:repeat-y;
+  box-sizing:border-box;
+  width:303px;
+}
+.rightside table{
+  border-collapse:separate;
+  margin:0 auto;
+  width:100%;
+}
+.rightside td{
+  background-image:url("/layout/backgrounds/tone.png");
+  padding:3px;
+}
+.rightside td:nth-child(1){
+  margin:0 auto;
+  width:95px;
+}
+.info{
+  overflow-y:scroll;
+  padding-top:6px;
+  height:110px;
+}
+.info p{
+  margin:0;
+}
+#closet-back{
+  background:url('/layout/backgrounds/3.jpg');
+  background-attachment:fixed;
+  border:1px solid #000000;
+  border-radius:7px;
+  margin:0 auto;
+  width:290px;
+}
+#closet-display{
+  background-image:url('/wardrobe/wardrobe_images/starting_image.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  box-sizing:border-box;
+  background-size:100%;
+  min-height:290px;
+}
+#display{
+  border:#bcbcbc inset 3px;
+  background:#ffffff;
+  min-height:200px;
+  margin:0 auto;
+  width:260px;
+}
+#menu{
+  background:url('misc/ryuk_decal.png');
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size:100%;
+}
+#list-row td{
+  background:url('/layout/backgrounds/3.jpg');
+  border:1px black solid;
+  border-radius:8px;
+  text-align:center;
+}

@@ -52,15 +52,15 @@ iframe{
   background-image:url("/music/layout_pieces/layout_header.gif");
 }
 .layout-leftborder{
-  background-image:url("/layout/layout_pieces/layout_leftborder.gif");
+  background-image:url("/music/layout_pieces/layout_leftborder.gif");
   max-width:5px;
 }
 .layout-rightborder{
-  background-image:url("/layout/layout_pieces/layout_rightborder.gif");
+  background-image:url("/music/layout_pieces/layout_rightborder.gif");
   max-width:5px;
 }
 .leftside{
-  background-image:url("/layout/layout_pieces/leftside_bgpattern.gif");
+  background-image:url("/music/layout_pieces/leftside_bgpattern.gif");
   background-repeat:repeat-y;
   padding-top:10px;
   width:202px;
@@ -77,7 +77,7 @@ iframe{
   width:170px;
 }
 .rightside{
-  background-image:url("/layout/layout_pieces/rightside_bgpattern.gif");
+  background-image:url("/music/layout_pieces/rightside_bgpattern.gif");
   background-repeat:repeat-y;
   width:448px;
 }
