@@ -116,9 +116,10 @@ iframe{
   width:95px;
 }
 .info{
+  box-sizing:border-box;
   overflow-y:scroll;
-  padding-top:6px;
   height:110px;
+  padding-top:6px;
 }
 .info p{
   margin:0;
