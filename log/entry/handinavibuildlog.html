@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>0ekekddddd | log</title>
+<meta charset="utf-8"/>
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
+<meta name="description" content="">
+<meta name="author" content="00000">
+<link rel="stylesheet" href="/log/pageStyle.css">
+</head>
+<body>
+<table class="body">
+  <tr>
+    <td colspan="4">
+      <map name="layout_header">
+        <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
+      </map>
+      <div class="layout_header"><img src="/log/layout_pieces/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
+    </td>
+  </tr>
+  <tr>
+    <td class="layout-leftborder">
+    </td>
+    <td class="leftside">
+      <iframe src="/log/pageNavigation.html" style="width:191px;border:none;"></iframe>
+    </td>
+    <td class="rightside">
+      <h3>Building Lain's Handinavi V1.</h3>
+      <p>Inspired by r/unixporn and cyberdeck builds, I made my own Handinavi from Serial Experiments Lain.</p>
+      <p>I'm pretty new to the Linux scene and have never built a PC before but as far as assembling the actual thing goes, the footing is incredibly basic Raspberry Pi desktop stuff and was as easy as it gets.</p>
+      <center></center>
+      <h3>The Meat and Potatoes.</h3>
+      <table class="table">
+        <tr>
+          <td colspan="2"><center>All equipment.</center></td>
+        </tr>
+        <tr>
+          <td style="width:50%;background-color:#f5b3ae;">
+            Peripherals of choice:
+          </td>
+          <td style="background-color:#f5b3ae;">
+            (Free) Software used:
+          </td>
+        </tr>
+              <tr>
+                <td>64 GB microSD card</td>
+                <td><a href="https://www.raspberrypi.com/software/" target="_blank">Raspberry Pi imager</a>*</td>
+              </tr>
+              <tr>
+                <td>Raspberry Pi SBC</td>
+                <td><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" target="_blank">PuTTY terminal</a></td>
+              </tr>
+              <tr>
+                <td>Hosyond 3.5" GPIO LCD touchscreen</td>
+                <td><a href="https://www.autodesk.com/products/fusion-360/personal" target="_blank">Autodesk Fusion 360</a></td>
+              </tr>
+              <tr>
+                <td>Any offbrand micro USB cable</td>
+                <td><a href="https://www.gimp.org/downloads/" target="_blank">Gimp</a></td>
+              </tr>
+              <tr>
+                <td>Voxelab Aquila S2 FDM 3D Printer</td>
+                <td><a href="https://www.blender.org/download/">Blender</a></td>
+              </tr>
+              <tr>
+                <td>Platinum 3.2 USB card reader</td>
+                <td><a href="https://www.thingiverse.com/thing:3325492" target="_parent">RPi substitute model</a></td>
+              </tr>
+              <tr>
+                <td>Canakit 2.5A RPi3B+ power adapter*</td>
+              </tr>
+              <tr>
+                <td>Anker battery pack</td>
+              </tr>
+              
+            </table>
+            <p style="color:#808080;">* Used for first boot.</p>
+            <h3>The Case.</h3>
+            <p>This case has gone through more than 5 revisions in a span of a week for a good reason. I'm not just making a Handinavi, but Lain's DECKED OUT Handinavi with all the upgrades and accessories made separately from the case (which would honestly be hell to put in your pocket in real life). Another limitation was the lone size of the Raspberry Pi board + GPIO screen fully assembled, which made it a whopping 3cm horizontally. For reference, the source Handinavi is only as wide as a Motorola StarTAC, or charitably the Apple Newton. I'm modeling a damn brick.</p>
+            <p>The outside shell went through so many alterations in Blender until I decided to just learn how to use Fusion 360. Can't say this aspect of making the Handinavi is exciting to explain since trial and error is a typical motion of modeling from scratch.</p>
+            <center>
+              <img src="/log/entry/handinavi_pictures/fusion360_composition_front.png" alt="">
+              <img src="/log/entry/handinavi_pictures/fusion360_composition_back.png" alt="">
+              <img src="/log/entry/handinavi_pictures/fusion360_flat.png" alt="">
+            </center>
+            <p></p>
+            <p>The case comes with a hinged faux trackpad, snapguides, and inserts for the accessories. I also branded my username on the inside of the case. I opted out of adding snapjoints as the guides were compact enough to hold the case together.</p>
+            <p>Some parts weren't modeled like the ribbon cable sockets or the antenna steels. Instead I could just take apart old computers for these parts or get them off Adafruit online for under the price of a steak. Which is what I did.</p>
+            <ol>
+              <li><a href="https://www.adafruit.com/product/5294#tutorials">GPIO Ribbon Cable 2x10 IDC Cable - 20 pins 12" long</a></li>
+              <li>To be added...</li>
+            </ol>
+            <p>While functional, they don't really do much but look pretty until I figure out what to do with them to improve the build. Isn't that the art of the cyberdeck?</p>
+            <h3>Ricing</h3>
+            <p>Before touching anything, the LCD screen and touch matrix had to be inverted so that the charger, jack, and HDMI ports are facing upwards. I also changed the display resoluton to 800 x 600 4:3 so that the taskbar and applications aren't in the way during usage.</p>
+            <p>We get to see a lot of footage of what Lain's Handinavi looks like in the show. As far as I could tell... it'd be impossible to recreate it to the letter. The canonical Handinavi's applications are displayed as spherical windows that bounce around the screen, and I don't have the technical nerve to try and program that, let alone on a 1gb board. Instead, I customized it after Lain's desktop environment as seen in Layer02 and ahead.</p>
+            <p>Several artistic liberties were taken when it came to making the wallpaper because I didn't have the privilege of creating interactive tooltips or buttons. The next best thing was just to make my own theme using Gimp and Blender.</p>
+            <center><img src="/log/entry/handinavi_pictures/Navi-Desktop.png" style="width:420px;"></center>
+            <p>I've pretty much made everything in the wallpaper except for the fontfaces, <normal style="font-family: Baskerville Old Face">Baskerville Old Face</normal> and <normal style="font-family: Monotype Corsiva">Monotype Corsiva</normal>.</p>
+            <p>The orb graphics are just mesh presets rendered in Blender. If I scale it around, I stretch it in Gimp with interpolation set to none. I made 2 versions; one for tooltip flavor and a flat platform as seen when Lain checks her E-mail or opens applications. These assets were recycled later for the custom icon packs.</p>
+            <p>The Navi logo in the back got airbrushed a bit to emulate a sort of glowing effect, as I felt it was missing the eerie capabilities and presence of the actual Lain computer without it. Gradients are your friend. Finally, 90s anime computers aren't 90s anime computers without its scanline overlay.</p>
+            <p>I'm happy with what I ended up with. Feel free to save the wallpaper for your own 640 by 480 display.</p>
+            <center><img src="/log/entry/handinavi_pictures/blender_screenshot_1.png" alt=""></center>
+            <center><img src="/log/entry/handinavi_pictures/computer-build_1.png" alt=""></center>
+            <p>This is what it looks like assembled after its 4th boot and rice.
+            I've made a custom icon pack to match the wallpaper</p>
+            <h3>Accessibility</h3>
+            <table>
+            <tr><td><p>2024.9.20: The computer itself (RPI3B+) is 1gb RAM so I won't be able to do most basic PC tasks without the patience of a monk. It's still capable of connecting to the internet, running Discord and Civ. I only use the computer to transfer files and display graphics as a prop as that's all it handles (but in the future I'd reconsider an RPi4 and use this board for other projects).</p></td></tr>
+            
+            </table>
+            <p>The screen is about 9 centimeters long and counts entirely on stylus inputs to work at all. This makes it really hard to type on even with Matchbox Keyboard installed, so I bought a small wireless keyboard as a solution since I haven't built a working trackpad yet.</p>
+            <p>I do keep some of my chat logs and music on it, so naturally it has a login screen.</p>
+            <p>My Handinavi will always be in its development stage, so I might add or change this blog accordingly. If you have questions about its development, <a href="https://0ekekddddd.123guestbook.com/">ask here</a> and I'll post a reply.</p>
+    </td>
+    <td class="layout-rightborder">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="position:relative;">
+    <iframe src="/log/layoutFooter.html" style="width:644px;border:none;height:130px;"></iframe>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
