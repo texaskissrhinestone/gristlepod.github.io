@@ -5,6 +5,10 @@ body{
   margin-top: 0px;
   margin: 0 auto;
 }
+::selection {
+  text-shadow: 0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1);
+  color:#ffffff;
+}
 table{
   border-collapse: collapse;
   vertical-align:top;
@@ -103,4 +107,9 @@ iframe{
 .rightside td:nth-child(1){
   margin:0 auto;
   width:115px;
+}
+#tabletitle{
+  background: linear-gradient(180deg, rgba(197,189,232,0.8953782196472339) 5%, rgba(102,79,189,0.8869748583026961) 39%, rgba(155,132,222,0.8813726174063375) 92%);
+  text-shadow: 0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1),0px 0px 7px rgba(179,149,255,1);
+  color:#ffffff;
 }
