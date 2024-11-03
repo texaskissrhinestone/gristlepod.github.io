@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>0ekekddddd | commission info</title>
+<title>gristlepod | commission info</title>
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="https://0ekekddddd.neocities.org/favicon.png">
 <meta name="description" content="">
@@ -8,20 +8,42 @@
 <style>
     body{
       background: linear-gradient(180deg, rgb(9 144 239) 0%, rgba(85, 205, 255, 1) 35%, rgb(248 248 248) 80%);
-      background-size:cover;
       font-family:"MS PGothic", sans-serif;
-      
-      font-size:12px;
+      background-size:cover;
+      width:100%;
       padding:0;
     }
+    table{
+      border-collapse: collapse;
+      box-sizing:border-box;
+      vertical-align:top;
+    }
+    td {
+      box-sizing:border-box;
+      padding: 0px;
+      margin: 0;
+    }
     .main{
-      background:#ffffff;
-      max-width:590px;
-      margin:0 auto;
+      width:590px;
+      font-size:12px;
+      margin:inherit;
       padding:10px;
     }
-    h2{
-      text-align:center;
+    @keyframes glowing {
+      0%  {box-shadow: 0px 0px 16px 16px rgba(255,255,255,1);}
+      50% {box-shadow: 0px 0px 19px 31px rgba(255,255,255,1);}
+      100%{box-shadow: 0px 0px 16px 16px rgba(255,255,255,1);}
+    }
+    .content{
+      animation-iteration-count: infinite;
+      animation-name: glowing;
+      animation-duration: 6s;
+      background:#ffffff;
+      padding: 5px;
+      width:85%;
+    }
+    h2, h3{
+      color:#5384e0;
     }
     hr {
       border: 0;
@@ -30,46 +52,80 @@
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
       width:500px;
     }
+    #sprite{
+      background-image:url('./user_int/sprite.png');
+      background-position:bottom;
+      background-repeat:no-repeat;
+      background-size:400px;
+      position:fixed;
+      height: 100vh; 
+      width:400px;
+      bottom:-20px;
+      right:30px;
+    }
+    @keyframes hoverbop {
+      0%  {bottom:-20px;}
+      20% {bottom:-10px;}
+      40% {bottom:-30px;}
+      100%{bottom:-20px;}
+    }
+    #sprite:hover{
+      animation-name: hoverbop;
+      animation-duration:.3s;
+    }
+    @media screen and (max-width: 900px){
+      #sprite {
+        display:none;
+      }
+    }
 </style>
 </head>
 <body>
-  <div class="main">
-    <h2>commission guidelines</h2>
-    <h3>General Commission Information</h3>
-      <ol>
-        <li>Every commission is defined by the time it takes to work on a request, not the exclusivity of the artwork. Every commission is an explicit exchange of image ownership.</li>
-        <li>I post WIP screencaps and finished works on my SNS. Private commissions will cost extra as I depend on my artwork to advertise my business.</li>
-        <li>Do not print my work for profit unless permitted. Commissioners may use their purchases for personal objects like t-shirts and stickers so long as it's not commercial.</li>
-        <li>Terms of service can change at any time. Slot holders will be informed of new terms presented at time of occupation.</li>
-        <li>All payments (USD) are taken through Ko-fi unless otherwise specified.</li>
-        <li>TAT for each piece will vary from a week to months, so name deadlines upon discussion.</li>
-        <li>I accept price negotiations.</li>
-     </ol>
-     <hr>
-     <h3>Request Guidelines</h3>
-     <p>* All skintones and gender identities are welcome.</p>
-     <p><normal style="color:green;">I specialize in</normal> character design, humanoids, and mammal anthros/regular animals. My best compositions are logo, sticker, or charm designs.</p>
-     <p><normal style="color:#a39621;">I sometimes make exceptions for</normal> vehicles/machinery, and other types of anthropomorphics. I also offer both muted NSFW with a specialty in pin-up style artwork and some other types of pornography, but please don't order before e-mailing me privately about details.</p>
-     <p><normal style="color:red;">I decline</normal> reference sheets and real people. <b>Asking for any depictions of underage abuse result in a blacklist position</b>. I may reject a commission without explanation.</p>
-     <hr>
-     <h3>Before you order...</h3>
-     <ol>
-       <li>I am a character artist! Please play into my strengths.</li>
-       <li>Have a reference sheet or image at the ready.</li>
-       <li>It helps to tell me what you are using the design or art for during the composition stage.</li>
-     </ol>
-     <hr>
-     <h3>Payments &amp; Refunds</h3>
-     <p>Payment upfront, or talk to me about a two payment arrangement. For two-payments, 50% upfront and 50% after delivery.</p>
-     <p>Refunds are not always guaranteed, and I definitely won't refund after the rendering process (after composition stage) has been started.</p>
-     <hr>
-     <h3>Requesting Form and Contact</h3>
-     <p>Send a request to commission me <a href="mailto:0ekekddddd@protonmail.com">by e-mail</a>.</p>
-     <hr>
-     <h3>Short Artist FAQ</h3>
-       <p><b>What tools?</b> Clip Studio Paint and Gimp. Wacom Tablet, DTZ-1200W LCD.</p>
-       <p><b>Can I use your existing artwork as a profile picture or graphic?</b> <br>Fanarts, yes. Some of my original artworks are commissioned pieces, so I'd advise against using those if you haven't asked the image owners for their permissions.</p>
-      <p><a href=""></a></p>
-  </div>
+<table class="main">
+  <tr>
+    <td>
+      <div id="sprite"></div>
+      <div class="content">
+          <h2 style="text-align:center;">commission guidelines</h2>
+          <h3>General Commission Information</h3>
+          <ol>
+          <li>Every commission is defined by the time it takes to work on a request, not the exclusivity of the artwork. Every commission is an explicit exchange of image ownership.</li>
+          <li>I post WIP screencaps and finished works on my SNS. Private commissions will cost extra as I depend on my artwork to advertise my business.</li>
+          <li>Do not print my work for profit unless permitted. Commissioners may use their purchases for personal objects like t-shirts and stickers so long as it's not commercial.</li>
+          <li>Terms of service can change at any time. Slot holders will be informed of new terms presented at time of occupation.</li>
+          <li>All payments (USD) are taken through Ko-fi unless otherwise specified.</li>
+          <li>TAT for each piece will vary from a week to months, so name deadlines upon discussion.</li>
+          <li>I accept price negotiations.</li>
+          </ol>
+          <h3>Before you order...</h3>
+          <ol>
+            <li>I am a character artist! Please play into my strengths.</li>
+            <li>Have a reference sheet or image at the ready.</li>
+            <li>It helps to tell me what you are using the design or art for during the composition stage.</li>
+          </ol>
+          <h3>Artist FAQ</h3>
+          <p><b>What tools?</b> Clip Studio Paint and Gimp. Wacom Tablet, DTZ-1200W LCD.</p>
+          <p><b>Can I use your existing artwork as a profile picture or graphic?</b> <br>Fanarts, yes. Some of my original artworks are commissioned pieces, so I'd advise against using those if you haven't asked the image owners for their permissions.</p>
+          <hr>
+          <h3>Request Guidelines</h3>
+          <p>* All skintones and gender identities are welcome.</p>
+          <p><normal style="color:green;">I specialize in</normal> character design, humanoids, and mammal anthros/regular animals. My best compositions are logo, sticker, or charm designs.</p>
+          <p><normal style="color:#a39621;">I sometimes make exceptions for</normal> vehicles/machinery, and other types of anthropomorphics. I also offer both muted NSFW with a specialty in pin-up style artwork and some other types of pornography, but please don't order before e-mailing me privately about details.</p>
+          <p><normal style="color:red;">I decline</normal> reference sheets and real people. <b>Asking for any depictions of underage abuse result in a blacklist position</b>. I may reject a commission without explanation.</p>
+          <hr>
+          <h3>Payments &amp; Refunds</h3>
+          <p>Payment upfront, or talk to me about a two payment arrangement. For two-payments, 50% upfront and 50% after delivery.</p>
+          <p>Refunds are not always guaranteed, and a piece [after composition stage] is invalid for refund.</p>
+          <h3>Requesting Form and Contact</h3>
+          <p>Send a request to commission me <a href="mailto:0ekekddddd@protonmail.com">by e-mail</a>.</p>
+          <hr>
+          <h2 style="text-align:center;">physical goods</h2>
+          <p>All prints, stickers, 3d printed products are home-manufactured and secured in salvaged packaging (whatever plastic, envelopes, and absorbants I get my hands on). My brand is found with self-sustainability as the model and third party support kept minimal, and I encourage my backers to do follow suit for a kinder, stable community.</p>
+          <p>Being situated in the US, please brush up on <a href="https://support.pirateship.com/en/articles/3859826-list-of-countries-not-currently-accepting-shipments-from-usps-or-ups">the list of countries</a> our postal service is restricted to send to. A refund is issued in any instance where a supporter's country is sanctioned for whatever reason.</p>
+          <hr>
+      </div>
+    </td>
+  </tr>
+</table>
 </body>
 </html>

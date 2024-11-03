@@ -154,8 +154,7 @@ iframe{
   background-size:100%;
 }
 #list-row td{
-  background:url('/layout/backgrounds/3.jpg');
-  border:1px black solid;
+  background:url('/layout/backgrounds/tone.png');
   border-radius:8px;
   text-align:center;
 }
