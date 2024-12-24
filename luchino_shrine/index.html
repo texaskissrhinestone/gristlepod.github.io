@@ -1,200 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
 <title>gristlepod | church of luchino</title>
-<link rel="shortcut icon" type="image/jpg" href="https://0ekekddddd.github.io/favicon.png">
+<meta charset="utf-8"/>
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="description" content="">
-<meta name="author" content="church of luchino, curated by 00000">
+<meta name="author" content="pod">
+<link rel="stylesheet" href="../ui/pageStyle_multi.css">
 <style>
-@font-face {
-  font-family: "arcade";
-  src: url('/fonts/arcade.otf');
-}
 body{
-  background:url('/luchino_shrine/images/background-icon.png');
-  font-family: "MS PGothic", sans-serif;
-  font-size:12px;
-  margin-top: 0px;
-  margin: 0 auto;
-  color:#ffffff;
+  background-image:url("../ui/backgrounds/check_green.gif");
+  animation:scroll 3s infinite linear;
+  background-position:0% 0%;
 }
-table{
-  border-collapse: collapse;
-  vertical-align:top;
-  margin:0 auto;
+@keyframes scroll{
+  0%{background-position:0%;}
+  100%{background-position:-3%;}
 }
-td {
-  vertical-align:top;
-  padding: 0;
-  margin: 0;
-}
-li{
- list-style:"→ ";
-}
-hr {
-  border: 0;
-  height: 1px;
-  margin-bottom:5px;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-}
-img{
-  image-rendering:crisp-edges;
-}
-a{
+a, a:visited, a:hover{
   color:#000000;
 }
-a:hover{
-  color:#000000;
+h3{
+  filter: drop-shadow(1px 1px 0 #000000) drop-shadow(-1px 1px 0 #000000) drop-shadow(0 -1px 0 #000000) drop-shadow(1px 0 #000000);
+  color:#f2efe6;
+  margin:0;
 }
-p, h1, h2, h3, normal{
-  padding-right:10px;
-  padding-left:10px;
+.layout_header{
+  background-image:url("layout_pieces/layout_header.png");
 }
-h1{
-  text-shadow:#919191 0px 0 2px, #919191 0px 0 2px;
-  font-family: "arcade";
-  margin:0 auto;
-  color:#000000;
+.leftside{
+  background-image:url("layout_pieces/leftside_bgpattern.gif");
 }
-h2{
-  font-family: "Times New Roman", sans-serif;
-  text-shadow: 1px 1px #a3a3a3;
-  margin:0 auto;
-  color:#454545;
+.rightside{
+  background-image:url("layout_pieces/rightside_bgpattern.gif");
 }
-.main{
-  background:#ffffff;
-  box-shadow: 2px 2px 9px 5px rgba(0,0,0,0.40);
-  border-right:3px #ffffff outset;
-  border-left:3px #ffffff outset;
-  margin:0 auto;
-  color:#000000;
-  width:670px;
-}
-.quote{
-  margin:0 auto;
-  color:#8c8c8c;
-  width:220px;
-}
-#heading{
-  background:url("/luchino_shrine/images/entrance_banner.png");
-  text-shadow:#ffffff 0px 0 2px, #ffffff -1px 0 2px, #ffffff 1px 0 2px, #ffffff 0px 0 2px;
-  background-repeat:no-repeat;
-  border:inset 4px #ffffff;
-  box-sizing:border-box;
-  background-size:cover;
-  position:relative;
-  min-height:160px;
-  text-align:right;
-  color:#242424;
-  margin:0 auto;
-  width:500px;
-  padding:0px;
-}
-#nav{
-  background:url('/luchino_shrine/images/nav_pattern.png');
-  text-align:center;
-  min-width:140px;
-  padding-top:5px;
-}
-#nav img{
-  cursor:pointer;
-}
-#display-support{
-  background:url('/luchino_shrine/images/display_background.png');
-  padding-right:3px;
-  padding-left:3px;
-  text-shadow:#ffffff 0px 0 2px;
-  background-repeat:no-repeat;
-  padding-top:10px;
-  width:100%;
-}
-#display-support img{
-  pointer-events: none;
+.photo{
+  border:solid 1px #000000;
+  height:120px;
 }
 </style>
+<script src="content.js"></script>
 </head>
-<script language="JavaScript">
-function randomLuchinoQuote(){
-var luchinoQuote=new Array()
-
-luchinoQuote[1]="It's only when we cross a boundary that it becomes clear."
-luchinoQuote[2]="And as the scales shed I shall step over the last of my boundaries."
-luchinoQuote[3]="If you ask me, my only regret is probably being unable to name that creature myself."
-luchinoQuote[4]="I like this. You can tell right away it's beyond humans' reach."
-luchinoQuote[5]="The great scholar, Luchino, is gone forever."
-luchinoQuote[6]="If you think you understand the evolution and origin of mankind, you clearly know nothing about humanity."
-
-var random=Math.floor(Math.random()*luchinoQuote.length)
-if (random==0)
-random=1
-document.getElementById("quoteDisplay").innerHTML(luchinoQuote[random]);
-}
-    
-function selectLink(menuLink) {
-  switch (menuLink)
-  {
-    case "entrance":
-    document.getElementById("display").innerHTML = "<noscript><p>Your browser is unable to run this library. Please disable any javascript blockers or ensure your browser runs javascript.</p></noscript><h2>Valaistuminen</h2><p>Luchino inspires me through life's ache and disorder. I've decided to carve through these aches by decorating a space on my website to express my Luchinomania. He represents the heart-to-heart message from his designers about their own passions for herpetology, Lovecraft, and gothic metamorphose.</p><p>When I feel down, I like to turn to Luchino in the forms of official art and fanworks. Please welcome yourself to read about Luchino, and my bond with his media.</p><h2>How I Can Spread The Love of Luchino?</h2><p>Luchino Diruse as a concept deserves much better than just the appreciation of one person, as he is very underappreciated in the Identity V online and local community.</p><ol><li>Post more about him on SNS! Many fans are horrifically ignorant about Luchino. There are more of us than we realize.</li><li><a href='mailto:'>E-Mail me</a> telling me what you like about Luchino using the subject tag &quot;Luchino Mail&quot;. All testimonials will be posted here for all to see.</li></ol><p>Recovery! Rebirth! Emerge. Press the arrow to keep reading.</p><center><a href='#' onclick='selectLink(`whoIsLuchino`)'>&rarr;</a></center>";
-    break;
-    case "whoIsLuchino":
-    document.getElementById("display").innerHTML = "<h2>&quot;Who is Luchino?&quot;</h2><p>Luchino Diruse is a playable character from a Dead-By-Daylight style game called Identity V. He was introduced in Season 6 of the game's running time and just like how DBD is split into killer/survivor sides, Luchino has two playstyles in both IDV's hunter and survivor factions.</p><p>Luchino's fate is what happens when science guides itself into the fog without ethic. He worked as a herpetologist alongside a university prior to his arrival to <a href='https://id5.fandom.com/wiki/Oletus_Manor' target='_blank'>Oletus</a> and is recognized in group 6, denoted by his <a href='https://id5.fandom.com/wiki/Category:Letters' target='_blank'>third character letter</a>'s confirmed serial &quot;6-1-4&quot;. He was known to test reptile bites on himself as his field was venom logic and would experience his very own genetic metamorphosis when given captivity of an unknown lizard-snake species. Some might say this was doomed kismet, but Luchino himself would go on to describe this transformation as a gift, or the &quot;presents from his research&quot;.</p><p>He is described by <a href='https://id5.fandom.com/wiki/Novelist' target='_blank'>the writer of the Character Letters</a> to be &quot;curious, cautious, envious&quot; and implied his first game has rendered him &quot;melancholic.&quot; Luchino is intuitive and tends to bear in mind other people's intentions, but composes himself politely when he speaks and isn't opposed to working with suspicious people when it meant furthering his studies as long as he has a fallback. While he can be blunt, precise, and practical-minded, he is humble and knows when to call it quits when understands something is beyond his abilties.</p><p>Luchino seems to embrace the final stages of his transformation. His <a href='https://id5.fandom.com/wiki/Curiosity_(Emote)' target='_blank'>Character Day emote</a> tributes to his past how he remembers working as an academic professor, literally laughing at his naiveté and others who are like his younger self. This emote also sort of reflects his dark humor. In his last Character Day letter, he expresses enlightment that he no longer cares to persevere in the name of his research. It's not that he doesn't care anymore, but accepts that not everything can be understood by a mere man, and takes humble conclusion to his research in one last diary at the manor. He begins pursuit of his spirituality as he realizes the (Lovecraftian) nonreality of Oletus.</p><center class='quote'>&quot;And I finally understand that those researchers who regret failing to find the answer are laughable. After all, there was never a true 'answer' in this world.&quot;<br>- IDV's &quot;The Last Page of a Record&quot; (2023)</center><p>His settling mutation has rendered him something self-pleasuring and aggressive towards other people. His black humor and sadistic tendencies carry into his online interactions and event dialogues, as he expresses an interest in plant toxins, chasing prey (sort of like a dog...) and unethical experimentation. He is long separated from the professor he once was, but he seems happier than when he was human.</p><table><tr><td><center class='quote'>くく…まだそれを…ははは！<br>問うな…人間風情が…<br>私は究極…究極だ…くひひ…<br>お前を喰らいて…究極と化す…<br>その血肉を…きひひゃひゃ！<br>極限の未知の先に辿り着いた、私を、<br>満たす…満たす…満た…………<br>クギ……カ………ひひひ……<br>なぁ…もう良いだろう？<br>▽┰▽＜渇いて…仕方ないんだ…</center></td><td><center class='quote'>Hehe... still that... hahaha!<br>Don't ask... humanity is...<br>I am the ultimate... the ultimate... heehee...<br>I will devour you... and become the ultimate...<br>That flesh and blood... kihihyahya!<br>I have reached the limit of the unknown.<br>Fill... fill... fill... fill.........<br>Nail.... click.... heeheehee...<br>Hey... isn't that enough now?<br>▽┰▽＜ I'm thirsty... I can't help it...</center></td></tr></table><br><br><center><a href='#' onclick='selectLink(`whoIsLuchino`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`luchinosMutations`)'>&rarr;</a></center>";
-    break;
-    case "luchinosMutations":
-    document.getElementById("display").innerHTML = "<h2>&quot;Detailing Luchino's Mutations&quot;</h2><p>Not to the fault of most IDV fans since it's a common misconception, but Luchino's mutations are not representative of evolution even if he says it is. Maybe in the context of Pokémon it would be, but evolution is nothing but the natural offset of generational traits rather than a person-by-person reaction to external stimuli, and no amount of transformative venom juice will make what Luchino went through evolution. Even in context of evolution, evolution never looks back.</p><center class='quote'>[Retrieving quote, come back later. I just don't want to buy the book].</center><p>As much as I like the Ouroboros motifs of Luchino's tale, I like to think that because evolution has no memory or foresight Luchino is essentially a separate classification beyond human or reptile. He does have countless similarities of a reptile &mdash; the extra jawbone in his mouth and the scaled composition of his skin most notably &mdash; but he's probably more closely related to the biped avemetatarsalia (or something close). A parallel creature outside of the more relevant, modern, reptile. And I use &quot;related&quot; loosely.</p><p>Although the contexts of evolution don't correctly describe Luchino's metamorphosis, Luchino technically <i>has</i> made it to &quot;the next step&quot; in a series of undiscovered evolutionary staircases and his anecdote is simply a peek into general reptilian genetic potential. We don't even know much about the origins of the lizard-snake thing Luchino had been studying to even classify it as either or, so as far as I'm concerned it's &quot;like&quot; a reptile, but has zero ties to any Earthly reptile.</p><p>One of my favorite anatomical features about Luchino is definitely his digitigrade hindlegs. When I first saw them in-game, I just sort of found them offputting. Offputting, but attractive, as they established a kind of disconnect from true reptile anatomy and I chalked it off as an oversight by Netease. Most modern reptiles are plantigrade like bears and humans, but his legs are bird-like where he has a third segment of leg that he stands on rather than his whole sole touching the floor.</p><p>I probably would've accepted either approach because some of the best fantastical designs stray away from anatomical accuracy and just work because they look cool. <b>However.</b> To my thrill, his deduction quests and Character Day letters intentionally make the origins of the his reptile specimen obscure, describing it as both a snake and a lizard in multiple instances. It's actually a great taste-test of Luchino's themes of ambiguity.</p><br><br><center><a href='#' onclick='selectLink(`luchinosMutations`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`ambiguityThemes`)'>&rarr;</a></center>";
-    break;
-    case "ambiguityThemes":
-    document.getElementById("display").innerHTML = "<h2>&quot;The Ambiguous Nature of Luchino&quot;</h2><p>To the Identity V players who haven't picked up the game since the last Case Closed Crossover, the game had a 2.0 update where Orpheus is replaced with a new protagonist, Alice Deross (The Journalist) and introduced the idea of &quot;<a href=&quot;https://id5.fandom.com/wiki/Alternate_Identities&quot; target=&quot;_blank&quot;>Alternate Identities</a>.&quot; There was a split in the community on whether or not this mechanic was being handled correctly plotwise because as of 2024, 2 out of 5 of the characters with alternate identities are also the only characters with relevance to the very last manor game and the only times they're presented as their hunter forms is when everyone's doped up on Orpheus's drugs. Admittedly this is boring as fuck and is a waste of potential.</p><p>Enter stage-left, best character of the entire game steps up to the plate.</p><p>Considering his plot, you really don't know whether or not we are interpreting Reptilian Luchino as we take it, or if we can really chalk it up to just drugs. It's just so feasible for Luchino to have actually transformed completely into a reptile and I'd prefer the hunter dynamics to be more obscure rather than every game having been a drug plot back to back. I find his mystery attractive.</p><br><br><center><a href='#' onclick='selectLink(`luchinosMutations`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`headcanonsList`)'>&rarr;</a></center>";
-    break;
-    case "headcanonsList":
-    document.getElementById("display").innerHTML = "<h2>A List of Headcanons</h2><ul><li>Luchino is a gay man raised Catholic (non-practicing), but is inexperienced with the dating scene either due to the cultural wave of homophobia after Italy's 1890 legalization and because of his workaholicism.</li><ul><li>Fun fact: <a href=&quot;https://twitter.com/Kenzyko_eja9&quot;>Luchino's stageplay actor</a> is openly gay. The casting department cooked with this one.</li></ul><li>Pre-transformation Luchino has both lobes pierced, but can no longer wear ear jewelry post-transformation. He does pierce his own tongue sheath though.</li><li>Since Luchino was only reported missing, he's probably still alive and squatting in the non-occupied cabin in Darkwoods that Bane Perez used to rest in.</li><ul><li>This is my way of shoehorning him into AOM and making Luchino x Norton work. I like to think that after Norton retreats from his assassination attempt in Darkwoods, he stays in hiding at the hunting cabin and meets Luchino there, the legend'd reptilian of Britain.</li><li>Yidhra also appears at the bonfire if you chair 3 survivors, so this conveniently (but barely) ties Luchino into this map for me.</li></ul><li>Given that Luchino has the quadratojugal bone that allows reptiles, birds, and amphibians to dislocate their jaws, Luchino's teeth are exclusively for gripping and killing. He also can't chew given that he lost his molars, and instead swallows bodies whole.</li><ul><li>The range of large animals he can swallow whole are pigs, goats, and deers.</li><li>Luchino has trouble breathing while jumping around. When reaching the stage where his neck had transformed into a thicker trunk, he experimented a lot with the limits of what he can swallow resulting in laryngeal neuropathy. After jumping, he pants in <a href=&quot;https://youtube.com/shorts/vCdFTjDBDho?si=l8luvSFQD-dTHGEa&quot; target=&quot;_blank&quot;>the same way horses with this condition do</a>. These are the internal tradeoffs that come with &quot;evolution&quot;.</li></ul><li>Poor eyesight, but he develops odor receptors on his tongue within mid-stage metamorphosis and scent becomes his primary form of navigating the game stages.</li><li>As an example of biology's lack of foresight, Luchino developed an asymmetrical tine on his tongue and a tail that can't fall off but regenerates if ever cut.</li><li>Luchino has a cloaca. This headcanon is so obviously self-indulgent but I'm sure mid-transformation, all the bits recede internally and it's not that different from a hairless marsupial's cloaca. I imagine your junk growing scales and turning inside out is terrifying to see though.</li><li>In his early-stage transformations, he develops a microscale film all over his body. They're so small that you can't see the individual scutes and too thin and soft to have yet developed his infamous teal color, but it gives him a glossy look.</li><ul><li>As this film becomes thicker towards the final stage of his metamorphosis, shedding becomes more painful. Like tearing a 2mm scab off your entire body. It's a bloody process, but natural.</li></ul><li>In the mid-late stages of his metamorphosis, his human hair completely sheds and is gradually replaced with a scalp of nanoscale pillars, similar to the hairs on a gecko's feet.</li></ul><br><br><center><a href='#' onclick='selectLink(`ambiguityThemes`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`otherTestimonies`)'>&rarr;</a></center>";
-    break;
-    case "otherTestimonies":
-    document.getElementById("display").innerHTML = "<h2>&quot;Other Testimonies&quot;</h2><p>No other testimonials have been sent in, but I guess that means more Luchino for me.</p><br><br><center><a href='#' onclick='selectLink(`headcanonsList`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`luchinort`)'>&rarr;</a></center>";
-    break;
-    case "luchinort":
-    document.getElementById("display").innerHTML = "<h2>&quot;LuchiNort Truth&quot;</h2><p>&quot;LuchiNort (ノトルキnotoruki)&quot; refers to the fan pairing between Luchino and <a href='https://id5.fandom.com/wiki/Prospector' target='_blank'>Norton Campbell</a>, a prospector and playable character. I am strictly a LuchiNort monoshipper and I've spent my entire involvement in the Identity V fandom creating sculpts and paintings for this pairing because its a relationship I strive to have.</p><center><img src='/luchino_shrine/images/notoruki_portrait.png' alt=''></center><hr><p>Despite never having shared a game or met, I think Norton and Luchino have a lot in common that gets overlooked:</p><p>Two obsessive wheel horses having broken ethical boundaries. These very foundations create a parallel in how Norton and Luchino both understand themselves when met with the transcendent &amp; grotesque creatures that they cross roads with. Besides their similarities, their different approaches and desires make them somewhat compatible if ever to meet.</p><h2>Ties In Lovecraft</h2><p>Luchino's specimen comes from an metaphysical god, <a href='https://id5.fandom.com/wiki/Dream_Witch' target='_blank'>Yidhra</a>. While not directly involved with the manor, she's known for transforming and enslaving men and women into her followers and her goals are unknown as she's more of a &quot;high stakes pest&quot; than an actual Oletus participant or person. Not much is known about the process of Yidhra's morphing. Luchino doesn't seem to be fully under her influence either. However, Luchino's specimen came from her so we consider his bite and metamorphose a &quot;mark&quot; of Yidhra's ownership and that makes him her vessel.</p><p>Luchino has came to terms with his ignorance knowing that he won't ever find &quot;all the answers&quot; and gives up his search for &quot;Point B&quot; in pursuit of pleasure in his new body.</p><p>Norton also has history with another <a href='https://lovecraft.fandom.com/wiki/Glaaki' target='_blank'>otherworldly force</a>. The way Norton handles coming into contact with a supernatural entity is much different from Luchino's approach. He takes advantage of his curse to change his chances of freedom despite the debt that follows.</p><p>Between a man who spent his life in observation and a man who has never had family or friends to humor his problems, I think they'd have a longerterm friendship more easily with each other than anyone else in the manor. Despite being introverted and self-sustaining, they love to learn. At the very least, they'd initiate something friendly of first impressions. They have a lot to learn about each other's fields of work as they both envy the fruit of knowledge and that need to learn would keep their bond fresh for years.</p><p>I can imagine them having a late-night whiskey next to a banker's lamp. Maybe at first they only have surface-level talk about their work: the time Norton found pockets of a rare type of salt after a cave flood and how Luchino had travelled to India, and when Luchino asks Norton if he's ever traveled overseas, he learns he's never made it out of Britain unless he was contracted to another site. From there, Luchino would encourage him to pursue the sciences.</p><p>There's also just something romantic about two servants of two unrelated greater forces finding comfort in each other. It makes you wonder what'd they'd do to help each other escape their abductors, or how they'd feel if they failed to help at all. What if they both watched each other become something else over time; would Norton find solidarity in his soulmate's firm reptilian skin? Would Luchino mourn Norton succumbing to <a href='https://lovecraft.fandom.com/wiki/Servant_of_Glaaki' target='_blank'>the green decay</a>? Does Norton envy the academic life Luchino was gifted? There's a lot of potential.</p><hr><h2>Community Reception</h2><p>As if Luchino fans weren't rare enough, any media of LuchiNort is even rarer. In the earlier seasons, it was somewhat controversial to romantically pair hunters with survivors because of their roles ingame. With the introduction to &quot;alternate identities,&quot; people are a lot more accepting of these types of dynamics since a hunter can also be a survivor at the same time. Excuses for why they appear as hunters differ, be it through hallucinogens or actual metaphysical demons.</p><p>I've made a lot of friends through our enjoyment of this pairing, and I'm still creating art of them today. I'm glad they support me back.</p><hr><h2>Explore Luchino x Norton Artists</h2><p>A list of LuchiNort artists and contributors I like. Contact me if you want your link removed.</p><ul><li><a href='https://twitter.com/ntlkonly'>Not Looky!! Web Event</a></li><li><a href='https://twitter.com/saichiidv' target='_blank'>https://twitter.com/saichiidv</a></li><li><a href='https://twitter.com/shino_e8' target='_blank'>https://twitter.com/shino_e8</a></li><li><a href='https://twitter.com/pensablee' target='_blank'>https://twitter.com/pensablee</a></li><li><a href='https://twitter.com/imoyarou_imoimo' target='_blank'>https://twitter.com/imoyarou_imoimo</a></li></ul><hr><h2>Blessings</h2><center><audio src='/luchino_shrine/audios/JasonWishnov.mp3' controls></audio><br><normal class='quote'>Byakuya Togami: Peeling back the smothering skins that last dulled their facets, Luchino and Norton had polished back each other's flicker, until doomed to serve the Great Old Ones.</normal></center><br><br><center><a href='#' onclick='selectLink(`otherTestimonies`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`photoAlbum`)'>&rarr;</a></center>";
-    break;
-    case "photoAlbum":
-    document.getElementById("display").innerHTML = "<center><marquee>Now playing: Lonyo - Garage Girls (Sunship Radio Edit)</marquee><audio autoplay src='/luchino_shrine/audios/Lonyo-GarageGirls_Sunship_Radio_Edit.mp3'></center><center><img src='/luchino_shrine/images/screencaps/autumn_salutations.png' alt='' style='height:190px;'> <img src='/luchino_shrine/images/screencaps/muted_greenery.png' alt='' style='height:190px;'><img src='/luchino_shrine/images/screencaps/muted_railroad.png' alt='' style='height:200px;'> <img src='/luchino_shrine/images/screencaps/railroad_sunbeam.png' alt='' style='height:200px;'><img src='/luchino_shrine/images/screencaps/under_the_lantern.png' alt='' style='height:300px;'></center></center><br><br><center><a href='#' onclick='selectLink(`luchinort`)'>&larr;</a>&dagger;<a href='#' onclick='selectLink(`entrance`)'>&rarr;</a></center>";
-    break;
-  }
-}
-</script>
 <body>
-<div class="main">
-<table>
+<table class="body">
   <tr>
-    <td id="nav">
-      <img src="/luchino_shrine/images/luchino_statue.png" alt="" title="In the middle of the atrium, stands a statue in his likeness." style=" 2px #ffffff;width:130px;border:inset;box-sizing:border-box;">
-      <img src="/luchino_shrine/graphic_int/entrance.png" onmouseover="this.src='/luchino_shrine/graphic_int/entrance-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/entrance.png'" onclick="selectLink('entrance')" alt="Entrance" title="Entrance"><br>
-      <img src="/luchino_shrine/graphic_int/who_is_luchino.png" onmouseover="this.src='/luchino_shrine/graphic_int/who_is_luchino-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/who_is_luchino.png'" onclick="selectLink('whoIsLuchino')" alt="Who Is Luchino?" title="Who Is Luchino?"><br>
-      <img src="/luchino_shrine/graphic_int/luchinos_mutations.png" onmouseover="this.src='/luchino_shrine/graphic_int/luchinos_mutations-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/luchinos_mutations.png'" onclick="selectLink('luchinosMutations')" alt="Luchino's Mutations" title="Luchino's Mutations"><br>
-      <img src="/luchino_shrine/graphic_int/themes_of_ambiguity.png" onmouseover="this.src='/luchino_shrine/graphic_int/themes_of_ambiguity-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/themes_of_ambiguity.png'" onclick="selectLink('ambiguityThemes')" alt="Themes Of Ambiguity" title="Themes Of Ambiguity"><br>
-      <img src="/luchino_shrine/graphic_int/list_of_headcanons.png" onmouseover="this.src='/luchino_shrine/graphic_int/list_of_headcanons-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/list_of_headcanons.png'" onclick="selectLink('headcanonsList')" alt="List Of Headcanons" title="List Of Headcanons"><br>
-      <img src="/luchino_shrine/graphic_int/other_testimonies.png" onmouseover="this.src='/luchino_shrine/graphic_int/other_testimonies-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/other_testimonies.png'" onclick="selectLink('otherTestimonies')" alt="Other Testimonies" title="Other Testimonies"><br>
-      <img src="/luchino_shrine/graphic_int/luchinort.png" onmouseover="this.src='/luchino_shrine/graphic_int/luchinort-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/luchinort.png'" onclick="selectLink('luchinort')" alt="Sect Of Luchinort" title="Sect Of Luchinort"><br>
-      <img src="/luchino_shrine/graphic_int/photo_album.png" onmouseover="this.src='/luchino_shrine/graphic_int/photo_album-hover.png'" onmouseout="this.src='/luchino_shrine/graphic_int/photo_album.png'" onclick="selectLink('photoAlbum')" alt="Photo Album" title="Photo Album"><br>
-      <a href="/"><img src="/user_int/goback_button.png"></a><br>
+    <td colspan="4">
+      <map name="layout_header">
+        <area shape="rect" alt="[Home]" coords="209,19,631,89" href="/" target="_parent">
+      </map>
+      <div class="layout_header"><img src="../ui/layout_pieces_multi/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
     </td>
-    <td id="display-support">
-      <div id="heading">      
-      <normal style="position:absolute;bottom:0;right:0;">Church established on 9/5/2024<br>All graphics and simple scripts designed by 00000</normal>
-      </div>
-      <hr>
-      <h1>Church of Luchino ~ ルキノの教会</h1>
+  </tr>
+  <tr>
+    <td class="layout-leftborder">
+    </td>
+    <td class="leftside">
+	  <div style="width:90%;margin:0 auto;border:#6e4f26 3px outset;background:#518a66;">
+	  <img src="graphic_int/entrance.png" onmouseover="this.src='graphic_int/entrance-hover.png'" onmouseout="this.src='graphic_int/entrance.png'" onclick="selectLink('entrance')" alt="Entrance" title="Entrance"><br>
+      <img src="graphic_int/who_is_luchino.png" onmouseover="this.src='graphic_int/who_is_luchino-hover.png'" onmouseout="this.src='graphic_int/who_is_luchino.png'" onclick="selectLink('whoIsLuchino')" alt="Who Is Luchino?" title="Who Is Luchino?"><br>
+      <img src="graphic_int/luchinos_mutations.png" onmouseover="this.src='graphic_int/luchinos_mutations-hover.png'" onmouseout="this.src='graphic_int/luchinos_mutations.png'" onclick="selectLink('luchinosMutations')" alt="Luchino's Mutations" title="Luchino's Mutations"><br>
+      <img src="graphic_int/themes_of_ambiguity.png" onmouseover="this.src='graphic_int/themes_of_ambiguity-hover.png'" onmouseout="this.src='graphic_int/themes_of_ambiguity.png'" onclick="selectLink('ambiguityThemes')" alt="Themes Of Ambiguity" title="Themes Of Ambiguity"><br>
+      <img src="graphic_int/list_of_headcanons.png" onmouseover="this.src='graphic_int/list_of_headcanons-hover.png'" onmouseout="this.src='graphic_int/list_of_headcanons.png'" onclick="selectLink('headcanonsList')" alt="List Of Headcanons" title="List Of Headcanons"><br>
+      <img src="graphic_int/other_testimonies.png" onmouseover="this.src='graphic_int/other_testimonies-hover.png'" onmouseout="this.src='graphic_int/other_testimonies.png'" onclick="selectLink('otherTestimonies')" alt="Other Testimonies" title="Other Testimonies"><br>
+      <img src="graphic_int/luchinort.png" onmouseover="this.src='graphic_int/luchinort-hover.png'" onmouseout="this.src='graphic_int/luchinort.png'" onclick="selectLink('luchinort')" alt="Sect Of Luchinort" title="Sect Of Luchinort"><br>
+      <img src="graphic_int/photo_album.png" onmouseover="this.src='graphic_int/photo_album-hover.png'" onmouseout="this.src='graphic_int/photo_album.png'" onclick="selectLink('photoAlbum')" alt="Photo Album" title="Photo Album">
+	  </div><br>
+	  <center><img src="images/luchino_statue.png" title="In the middle of the atrium, stands a statue in his likeness." alt="A figure I modeled of Luchino." style="border:#6e4f26 3px outset;"></center>
+    </td>
+    <td class="rightside">
       <div id="quoteDisplay" onload="randomLuchinoQuote(random)"></div>
-      <normal><b style="color:#999999;">Content warning for anatomically graphic text and JS dependent navigation.</b></normal>
-      <hr>
       <div id="display">
-      <noscript><p>Your browser is unable to run this library. Please disable any javascript blockers or ensure your browser runs javascript.</p></noscript><h2>Valaistuminen</h2><p>Luchino inspires me through life's ache and disorder. He represents the heart-to-heart message from his designers about their own passions for herpetology, Lovecraft, and gothic metamorphose.</p><p>When I feel down, I like to turn to Luchino in the forms of official art and fanworks. Please welcome yourself to read about Luchino, and my bond with his media.</p><h2>How I Can Spread The Love of Luchino?</h2><p>Luchino Diruse as a concept deserves much better than just the appreciation of one person, as he is very underappreciated in the Identity V online and local community.</p><ol><li>Post more about him on SNS! Many fans are horrifically ignorant about Luchino. There are more of us than we realize.</li><li><a href='mailto:'>E-Mail me</a> telling me what you like about Luchino using the subject tag &quot;Luchino Mail&quot;. All testimonials will be posted here for all to see.</li></ol><p>Recovery! Rebirth! Emerge. Press the arrow to keep reading.</p><center><a href='#' onclick='selectLink(`whoIsLuchino`)'>&rarr;</a></center>
+      <noscript><p>Your browser is unable to run this library. Please disable any javascript blockers or ensure your browser runs javascript.</p></noscript>
+	  <h3>Valaistuminen</h3>
+	  <div class="rightbox"><p>Luchino inspires me through life's ache and disorder. He represents the heart-to-heart message from his designers about their own passions for herpetology, Lovecraft, and gothic metamorphose.</p><p>When I feel down, I like to turn to Luchino in the forms of official art and fanworks. Please welcome yourself to read about Luchino, and my bond with his media.</p></div><br>
+	  <h3>How I Can Spread The Love of Luchino?</h3>
+	  <div class="rightbox"><p>Luchino Diruse as a concept deserves much better than just the appreciation of one person, as he is very underappreciated in the Identity V online and local community.</p><ol><li>Post more about him on SNS! Many fans are horrifically ignorant about Luchino. There are more of us than we realize.</li><li><a href='mailto:'>E-Mail me</a> telling me what you like about Luchino using the subject tag &quot;Luchino Mail&quot;. All testimonials will be posted here for all to see.</li></ol><p>Recovery! Rebirth! Emerge. Touch Luchino to keep reading.</p>
+	  </div>
+	  <center><a href='#' onclick='selectLink(`whoIsLuchino`)'><img src='images/hunt_luchino_40x40.gif' alt='Click me to proceed'></a></center>
       </div>
-      <hr>
-      <center><img src="./images/hunt_luchino_40x40.gif" alt=""> </center>
+    <td class="layout-rightborder">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" style="position:relative;">
+    <iframe src="layoutFooter_multi.html" style="width:644px;border:none;height:130px;"></iframe>
     </td>
   </tr>
 </table>
-</div>
 </body>
 </html>

@@ -5,8 +5,9 @@
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="favicon.png">
 <meta name="description" content="">
-<meta name="author" content="00000">
-<link rel="stylesheet" href="/log/pageStyle.css">
+<meta name="author" content="pod">
+<link rel="stylesheet" href="../../ui/pageStyle_multi.css">
+<link rel="stylesheet" href="../changeBackground.css">
 </head>
 <body>
 <table class="body">
@@ -15,20 +16,20 @@
       <map name="layout_header">
         <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
       </map>
-      <div class="layout_header"><img src="/log/layout_pieces/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
+      <div class="layout_header"><img src="../../ui/layout_pieces_multi/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
     </td>
   </tr>
   <tr>
     <td class="layout-leftborder">
     </td>
     <td class="leftside">
-      <iframe src="/log/pageNavigation.html" style="width:191px;border:none;"></iframe>
+      <iframe src="../../ui/pageNavigation.html" style="width:191px;border:none;"></iframe>
     </td>
     <td class="rightside">
       <h3>Handinavi Build Log.</h3>
       <p>Inspired by r/unixporn and cyberdeck builds, I made my own Handinavi from Serial Experiments Lain.</p>
       <center></center>
-      <table class="table">
+      <table id="menu">
         <tr>
           <td colspan="2"><center>All equipment.</center></td>
         </tr>
@@ -77,8 +78,8 @@
             <p>This case has gone through more than 5 revisions in a span of a week for a good reason. I'm not just making a Handinavi, but Lain's DECKED OUT Handinavi with all the upgrades and accessories made separately from the case (which would honestly be hell to put in your pocket in real life). Another limitation was the lone size of the Raspberry Pi board + GPIO screen fully assembled, which made it a whopping 3cm horizontally. For reference, the source Handinavi is only as wide as a Motorola StarTAC, or charitably the Apple Newton. I'm modeling a damn brick.</p>
             <p>The outside shell went through so many alterations in Blender until I decided to just learn how to use Fusion 360. Can't say this aspect of making the Handinavi is exciting to explain since trial and error is a typical motion of modeling from scratch.</p>
             <center>
-              <img src="/log/entry/handinavi_pictures/fusion360_composition_front.png" alt="">
-              <img src="/log/entry/handinavi_pictures/fusion360_composition_back.png" alt="">
+              <img src="handinavi_pictures/fusion360_composition_front.png" alt="">
+              <img src="handinavi_pictures/fusion360_composition_back.png" alt="">
             </center>
             <p></p>
             <p>The case comes with a hinged faux trackpad, snapguides, and inserts for the accessories. I also branded my username on the inside of the case, with a level depression to make space for a power cell. The back is carved out for a adhesed pseudo-vent and a hole for the sd card to rest on. I opted out of adding snapjoints as the guides were compact enough to hold the case together.</p>
@@ -92,12 +93,12 @@
             <p>Before touching anything, the LCD screen and touch matrix had to be inverted so that the charger, jack, and HDMI ports are facing upwards. I also changed the display resoluton to 800 x 600 4:3 so that the taskbar and applications aren't in the way during usage.</p>
             <p>We get to see a lot of footage of what Lain's Handinavi looks like in the show. As far as I could tell... it'd be impossible to recreate it to the letter. The canonical Handinavi's applications are displayed as spherical windows that bounce around the screen, and I don't have the technical nerve to try and program that, let alone on a 1gb board. Instead, I customized it after Lain's desktop environment as seen in Layer02 and ahead.</p>
             <p>Several artistic liberties were taken when it came to making the wallpaper because I didn't have the privilege of creating interactive tooltips or buttons. The next best thing was just to make my own theme using Gimp and Blender.</p>
-            <center><img src="/log/entry/handinavi_pictures/Navi-Desktop.png" style="width:420px;"></center>
+            <center><img src="handinavi_pictures/Navi-Desktop.png" style="width:420px;"></center>
             <p>I've pretty much made everything in the wallpaper except for the fontfaces, <normal style="font-family: Baskerville Old Face">Baskerville Old Face</normal> and <normal style="font-family: Monotype Corsiva">Monotype Corsiva</normal>.</p>
             <p>The orb graphics are just mesh presets rendered in Blender. If I scale it around, I stretch it in Gimp with interpolation set to none. I made 2 versions; one for tooltip flavor and a flat platform as seen when Lain checks her E-mail or opens applications. These assets were recycled later for the custom icon packs.</p>
             <p>The Navi logo in the back got airbrushed a bit to emulate a sort of glowing effect, as I felt it was missing the eerie capabilities and presence of the actual Lain computer without it. Gradients are your friend. Finally, 90s anime computers aren't 90s anime computers without its scanline overlay.</p>
             <p>I'm happy with what I ended up with. Feel free to save the wallpaper for your own 640 by 480 display.</p>
-            <center><img src="/log/entry/handinavi_pictures/blender_screenshot_1.png" alt=""> <img src="/log/entry/handinavi_pictures/computer-build_1.png" alt=""> <img src="/log/entry/handinavi_pictures/innards_engrave.jpg" alt="" height="220px"> <img src="/log/entry/handinavi_pictures/printing_backshell.png" alt="" height="220px"> <img src="/log/entry/handinavi_pictures/prototype_fetch.jpg" alt="" width="370px"> <img src="/log/entry/handinavi_pictures/printing_frontshell.png" alt="" width="370px"> <img src="/log/entry/handinavi_pictures/prototype_landingproof.jpg" alt="" width="370px"> <img src="/log/entry/handinavi_pictures/prototype_closedcover.jpg" alt="" width="370px">
+            <center><img src="handinavi_pictures/blender_screenshot_1.png" alt=""> <img src="handinavi_pictures/computer-build_1.png" alt=""> <img src="handinavi_pictures/innards_engrave.jpg" alt="" height="220px"> <img src="handinavi_pictures/printing_backshell.png" alt="" height="220px"> <img src="handinavi_pictures/prototype_fetch.jpg" alt="" width="370px"> <img src="handinavi_pictures/printing_frontshell.png" alt="" width="370px"> <img src="handinavi_pictures/prototype_landingproof.jpg" alt="" width="370px"> <img src="handinavi_pictures/prototype_closedcover.jpg" alt="" width="370px">
             </center>
     </td>
     <td class="layout-rightborder">
@@ -105,7 +106,7 @@
   </tr>
   <tr>
     <td colspan="4" style="position:relative;">
-    <iframe src="/log/layoutFooter.html" style="width:644px;border:none;height:130px;"></iframe>
+    <iframe src="../../ui/layoutFooter_multi.html" style="width:644px;border:none;height:130px;"></iframe>
     </td>
   </tr>
 </table>

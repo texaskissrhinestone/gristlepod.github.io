@@ -6,10 +6,13 @@
 <link rel="shortcut icon" type="image/jpg" href="https://0ekekddddd.github.io/favicon.png">
 <meta name="description" content="">
 <meta name="author" content="Pat">
-<link rel="stylesheet" href="/music/pageStyle.css">
+<link rel="stylesheet" href="../ui/pageStyle_minimal.css">
 <style>
+body{
+  background: url("images/background01.png");
+}
 li {
-  list-style-image: url('/music/images/tune_icon.png');
+  list-style-image: url('images/tune_icon.png');
   padding-right:0px;
   padding-left:0px;
 }
@@ -65,7 +68,7 @@ function run(link, player) {
       <map name="layout_header">
         <area shape="rect" alt="[Home]" coords="395,7,647,84" href="/">
       </map>
-      <div class="layout_header"><img src="/layout/layout_pieces/layout_header_transparent.gif" style="width:660px;border:0;" alt="" usemap="#layout_header"></div>
+      <div class="layout_header"><img src="../ui/layout_pieces_minimal/layout_header_transparent.gif" style="width:660px;border:0;" alt="" usemap="#layout_header"></div>
     </td>
   </tr>
   <tr>
@@ -74,21 +77,22 @@ function run(link, player) {
     <td class="leftside">
       <div class="leftbox">
         <p>Production, mixing, visual renders made by yours truly.</p>
+		<p>Nothing too serious.</p>
         <p>My music is remix-friendly. All I ask is that my work is not reposted on Spotify and that I'm given proper credit.</p>
       </div><br>
-      <center><img src="/music/images/openmpt-button01.png" alt="OpenMPT User."></center>
+      <center><img src="images/openmpt-button01.png" alt="OpenMPT User."></center>
     </td>
     <td class="rightside">
       <br>
       <center><audio id="audio" controls></audio></center>
     <ul id="tracklist">
-       <li><a href="/music/audios/PasteMarchDivision.flac">Paste March Division</a> 2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="/music/images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
-       <li><a href="/music/audios/Bit_Silly.flac">bit silly</a> 2023.04.22 // <a href="https://www.mediafire.com/file/fsnajsvgo54vp5j/Bit_Silly.flac/file" target="_blank">FLAC download.</a></li>
-       <li><a href="/music/audios/3r+958ff.flac">3r+958ff</a> 2024.11.04 // <a href="https://www.mediafire.com/file/6ueo1nupsze7coj/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></li>
+       <li><a href="audios/PasteMarchDivision.flac">Paste March Division</a> 2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
+       <li><a href="audios/Bit_Silly.flac">bit silly</a> 2023.04.22 // <a href="https://www.mediafire.com/file/fsnajsvgo54vp5j/Bit_Silly.flac/file" target="_blank">FLAC download.</a></li>
+       <li><a href="audios/3r+958ff.flac">3r+958ff</a> 2024.11.04 // <a href="https://www.mediafire.com/file/6ueo1nupsze7coj/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></li>
       </ul>
       <center>That's the end of the library!</center>
       <hr>
-      <center><img src="/music/images/cover.png" alt="The cover of my 4ever collection." style="width:50%;"></center>
+      <center><img src="images/cover.png" alt="The cover of my 4ever collection." style="width:50%;"></center>
       <p>Listen on your own time @ <a href="https://soundcloud.com/0ekekddddd">Soundcloud</a>.</p>
     </td>
     <td class="layout-rightborder">
@@ -96,7 +100,7 @@ function run(link, player) {
   </tr>
   <tr>
     <td colspan="4" style="position:relative;">
-    <iframe src="/layoutFooter.html" style="width:660px;border:none;height:91px;"></iframe>
+    <iframe src="../ui/layoutFooter_minimal.html" style="width:660px;border:none;height:91px;"></iframe>
     </td>
   </tr>
 </table>
