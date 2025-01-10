@@ -1,9 +1,10 @@
 :root{
   --linkColor:#616161;
   --selectionColor:#b395ff;
+  --jellyGradient:linear-gradient(180deg, #b4cf91 5%,#65943d 39%, #adb851 92%);
 }
 body{
-  background-image:url("../ui/backgrounds/bg_tile_black.gif");
+  background-image:url("../ui/backgrounds/flowergingham.gif");
   font-family: "MS PGothic", sans-serif;
   font-size:12px;
   margin-top: 0px;
@@ -36,6 +37,7 @@ p, h1, h2, h3, details{
   padding-right:10px;
   padding-left:10px;
 }
+b{color:#8f3b3b;}
 details{
   cursor:text;
   color:#636363;
@@ -77,34 +79,26 @@ iframe{
   box-sizing:border-box;
   width:620px;
 }
-.center div{
-  box-sizing:border-box;
-  padding:6px;
-}
-.center td{
-  background-image:url("../ui/backgrounds/tone.png");
-  padding:3px;
-}
-.center div{
-  border:#babcb9 inset 3px;
-  background:#1c1c1c;
-  min-height:300px;
+.center .centerlog{
+  background: linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
+  box-shadow: inset 0px 0px 3px #ffffff;
+  border: 1px solid #3a371b;
+  padding:5px 5px 5px 5px;
+  border-radius:10px;
   margin:0 auto;
-  color:#ffffff;
-  width:500px;
-}
-.center a{
-  color:#ffffff;
+  width:80%;
 }
 a:hover{
-  color:#949494;
-}
-#date{
-  color:#43a12f;
-}
-#label{
-  font-weight:bold;
+  color:#000000;
 }
 .demo{
   width:100%;
+}
+#tabletitle{
+  background: var(--jellyGradient);
+  box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff;
+  border-bottom:1px solid #36333b;
+  border-top:1px solid #36333b;
+  color:#ffffff;
+  padding:3px
 }

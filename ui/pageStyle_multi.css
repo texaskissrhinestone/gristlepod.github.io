@@ -1,9 +1,10 @@
 :root{
   --linkColor:#616161;
   --selectionColor:#b395ff;
+  --jellyGradient:linear-gradient(180deg, #b4cf91 5%,#65943d 39%, #adb851 92%);
 }
 body{
-  background-image:url("../ui/backgrounds/bg_tile_black.gif"), var(--bodyBg);
+  background-image: linear-gradient(180deg, #00000000 0%, #ffffff90 25%, #ffffff 50%, #ffffff90 75%, #00000000 100%), url("../ui/backgrounds/flowergingham.gif");
   font-family: "MS PGothic", sans-serif;
   font-size:12px;
   margin-top: 0px;
@@ -40,6 +41,7 @@ p, h1, h2, h3, details{
   padding-right:10px;
   padding-left:10px;
 }
+b{color:#8f3b3b;}
 details{
   cursor:text;
   color:#636363;
@@ -113,14 +115,14 @@ iframe{
   width:170px;
 }
 .rightbox{
-  background: linear-gradient(180deg, #e3d5c570 0%, #e3d5c5 100%);
+  background: linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
   box-shadow: inset 0px 0px 3px #ffffff;
   border: 1px solid #3a371b;
+  border-radius:10px;
+  
   position:relative;
   box-sizing:border-box;
-  border-radius:10px;
   margin:0 auto;
-  padding:2px;
   width:95%;
 }
 #menu{
@@ -134,7 +136,7 @@ iframe{
   border-left:none;
 }
 #tabletitle{
-  background: linear-gradient(180deg, #c5bde8 5%, #664fbd 39%, #9b84de 92%);
+  background: var(--jellyGradient);
   box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff;
   border-bottom:1px solid #36333b;
   border-top:1px solid #36333b;
