@@ -220,7 +220,7 @@ nav a:hover{
   }
   .imgBlock{
 	background-position:auto auto;
-	background-size:100%;
+	background-size:auto;
   }
   .flowerSign{
     height:var(--flowerSignDesktop);
@@ -239,8 +239,8 @@ nav a:hover{
   }
   #links{width:50px;}
   .imgBlock{
-    background-size: auto 100%;
-	height:450px;
+    background-size: 100% auto;
+	height:500px;
   }
   .txtBlock, .imgBlock, #footer{
     margin:10px var(--boxWidthMobile) var(--boxWidthMobile) var(--boxWidthMobile);
