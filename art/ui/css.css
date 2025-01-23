@@ -114,6 +114,7 @@ nav a:hover{
 #top{
   background:url('topBanner.png');
   background-position:bottom left;
+  background-size:210px;
   background-repeat:no-repeat;
   min-height:250px;
   color: var(--topColors);
@@ -163,15 +164,17 @@ nav a:hover{
   right:0px;
   text-align:right;
 }
-#links button:hover{
-  animation:selectBop .3s ease-in;
-}
 #links button{
   background-position:top left;
+  background-size:48px 48px;
   margin:10px 0px 0px 0px;
   height:48px;
   width:48px;
 }
+#links button:hover{
+  animation:selectBop .3s ease-in;
+}
+
 .labelBlock{
   background:var(--deep2);
   border-radius:6px;
@@ -199,13 +202,10 @@ nav a:hover{
   top:-10px;
   left:-10px;
 }
-#buyerRights li{
-  list-style-type: "✓"
-}
-#prohibited li{
-  list-style-type: "✕";
-}
-
+#showcase{text-align:center;}
+#showcase img{height:230px;}
+#buyerRights li{list-style-type: "✓"}
+#prohibited li{list-style-type: "✕";}
 /* DESKTOP */
 
 @media(min-width:790px){
@@ -219,7 +219,8 @@ nav a:hover{
     width:50vw;
   }
   .imgBlock{
-	background-size:cover;
+	background-position:auto auto;
+	background-size:100%;
   }
   .flowerSign{
     height:var(--flowerSignDesktop);
@@ -231,18 +232,14 @@ nav a:hover{
 /* MOBILE */
 
 @media screen and (max-width:789px){
-  .txtBlock{
-    background: var(--genericBoxBG);
-  }
+  .txtBlock{background: var(--genericBoxBG);}
   #top{
 	margin:0px var(--boxWidthMobile) 5px var(--boxWidthMobile);
     font-size:20px;
   }
-  #links{
-    width:50px;
-  }
+  #links{width:50px;}
   .imgBlock{
-    background-size: auto;
+    background-size: auto 100%;
 	height:450px;
   }
   .txtBlock, .imgBlock, #footer{
