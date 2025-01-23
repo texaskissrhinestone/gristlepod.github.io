@@ -21,15 +21,8 @@
 }
 
 /* GLOBAL */
-
-::selection{
-  background:#00000090;
-  color:#ffffff;
-}
-
-/* FONT APPLICATION */
-
 html{scroll-behavior: smooth;}
+::selection{background:#00000090;color:#ffffff;}
 body{
   background:url("bg.png"), url("bg.png"), var(--deep1);
   font-family:'Helvetica Neue', sans-serif;
@@ -67,8 +60,8 @@ hr{
   height: 6px;
   border: 0;
 }
-.txtBlock hr, .imgBlock hr{background:url("hrspike_gray.png");}
-.imgSumm hr, .labelBlock hr{background:url("hrspike_green.png");}
+.txtBlock hr, .labelBlock hr{background:url("hrspike_gray.png");}
+.imgSumm hr{background:url("hrspike_green.png");}
 button{
   font-family: "hack", monospace, sans-serif;
   background:var(--primaryColor);
@@ -80,6 +73,7 @@ button{
   font-size:20px;
   border:0;
 }
+button a, button a:visited{color:#000000;}
 button:hover{
   background:#10cc9d;
   transition:.4s ease;
@@ -129,16 +123,9 @@ nav a:hover{
   border-radius:10px;
   background: var(--genericBoxBG);
 }
-.txtBlock, .imgBlock{
-  min-height:339px;
-}
-.txtBlock h2, .imgBlock h2, .labelBlock h2{
-  color:var(--primaryColor);
-}
-.imgBlock{
-  background-position:50% 50%;
-  background-repeat:no-repeat;
-}
+.txtBlock, .imgBlock{min-height:339px;}
+.txtBlock h2, .imgBlock h2, .labelBlock h2{color:var(--primaryColor);}
+.imgBlock{background-position:50% 50%;background-repeat:no-repeat;}
 .imgSumm{
   padding:100px 20px 10px 20px;
   box-sizing:border-box;
@@ -171,9 +158,7 @@ nav a:hover{
   height:48px;
   width:48px;
 }
-#links button:hover{
-  animation:selectBop .3s ease-in;
-}
+#links button:hover{animation:selectBop .3s ease-in;}
 
 .labelBlock{
   background:var(--deep2);
@@ -203,9 +188,10 @@ nav a:hover{
   left:-10px;
 }
 #showcase{text-align:center;}
-#showcase img{height:230px;}
+#showcase img{margin:0px 5px 0px 0px;}
 #buyerRights li{list-style-type: "✓"}
 #prohibited li{list-style-type: "✕";}
+
 /* DESKTOP */
 
 @media(min-width:790px){
@@ -219,7 +205,6 @@ nav a:hover{
     width:50vw;
   }
   .imgBlock{
-	background-position:auto auto;
 	background-size:auto;
   }
   .flowerSign{
@@ -228,6 +213,7 @@ nav a:hover{
 	background-size:var(--flowerSignDesktop);
 	padding:23px 0px 0px 0px;
   }
+  #showcase img{height:230px;}
 }
 /* MOBILE */
 
@@ -240,19 +226,13 @@ nav a:hover{
   #links{width:50px;}
   .imgBlock{
     background-size: 100% auto;
-	height:500px;
+	height:80vw;
   }
   .txtBlock, .imgBlock, #footer{
     margin:10px var(--boxWidthMobile) var(--boxWidthMobile) var(--boxWidthMobile);
   }
-  .flowerSign{
-	background-size:var(--flowerSignMobile);
-    height:var(--flowerSignMobile);
-    width:var(--flowerSignMobile);
-	padding:25px 0px 0px 0px;
-	font-size:26px;
-	right:-6px;
-  }
+  .flowerSign{visibility:hidden;} 
+  #showcase img{width:85vw;}
 }
 /*ANIMATIONS*/
 @keyframes imgSummAnm{
