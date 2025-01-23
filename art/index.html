@@ -3,130 +3,80 @@
 <head>
 <title>gristlepod | art</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/jpg" href="https://0ekekddddd.github.io/favicon.png">
+<meta property="og:image" content="preview.png">
 <meta name="author" content="gristlepod">
-<meta name="description" content="merchandise & international tos.">
+<meta name="description" content="merchandise & commissions tos.">
 <link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
-<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="pageStyle.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-<script src="speech_bubble.js"></script>
+<link rel="stylesheet" href="ui/css.css">
 </head>
 <body>
+<nav>
+  <a href="/">home</a> | <a href="store">store</a> | <a href="commissions">terms</a>
+  <div class="navBorder"></div>
+</nav>
 <div id="catalog">
   <section id="top">
-    <div style="position:absolute;bottom:0px;right:0px;text-align:right;">
-	  Follow us<br>
+    <div id="links">
 	  <a href="https://ko-fi.com/gristlepod"><button style="background-image:url('ui/icons/kofi.png');" alt="Ko-fi store" title="Ko-fi store"></button></a>
 	  <a href="https://bsky.app/profile/gristlepod.bsky.social"><button style="background-image:url('ui/icons/bsky.png');" alt="Bluesky" title="Bluesky"></button></a>
 	  <a href="https://x.com/ProspectorID5"><button style="background-image:url('ui/icons/twitter.png');" alt="Twitter" title="Twitter"></button></a>
 	</div>
   </section>
-  <section id="b">
-    <img src="ui/sign_prints.png" alt="printsイラスト" title="printsイラスト" class="signPrints">
-    <hr>
-	<div class="inline">
-      <div>
-	    <b>A5 print</b><b style="background:#f8f8f8;color:var(--topColors);">$15.00</b><br>
-	    <b>A7 print</b><b style="background:#f8f8f8;color:var(--topColors);">$5.50</b><br>
+  <div class="inline">
+    <section class="txtBlock">
+	  <h2>about me</h2>
+	  <p>Frontend designer & creative developer.</p>
+	  <p>My label is connected to most venues of my creative work, most notably my illustrations.</p>
+	  <p>In my personal time I manage my un-artistic design &amp; technology blog and have been creating for the internet and myself for 6+ years.</p>
+	  <hr>
+	  <p>My goal through my service is to create what I love full-time. My online supporters are the ones to thank for keeping my stuff free and accessible.</p>
+	  <p>Thanks for reading.</p>
+    </section>
+    <section class="imgBlock" style="background-image:url('ui/thumbnails/store_showcase.png');">
+      <div class="imgSumm">
+	    <h2><a href="store">merch</a></h2>
+		<ul>
+		  <li>exclusive stickers &amp; prints</li>
+		  <li>designed from scratch, home-manufactured.</li>
+		  <li>your binder will look really cool with my stickers</li>
+		</ul>
+		<p><a href="store">Read more...</a></p>
 	  </div>
-	  <div style="text-align:right;">
-	    <a href="#i"><button>Commissions open</button></a>
+    </section>
+  </div>
+  <section class="labelBlock">
+	<h3>contact: <a href="mailto:0ekekddddd@protonmail.com">protonmail[dot]com</a> or ko-fi direct messages</h3>
+  </section>
+  <div class="inline">
+    <section class="imgBlock" id="b" style="background-image:url('ui/thumbnails/mushroomburger_cropped.png');">
+	  <div class="flowerSign">
+	    $80
 	  </div>
-	</div>
-  </section>
-  <section id="a">
-    <div class="a5demo">
-      <a href="https://ko-fi.com/s/54d72fdaf4" target="_blank"><img src="thumbnails/print_winetasting.png" alt="&quot;Wine Tasting&quot;" title="&quot;Wine Tasting&quot;"><img src="thumbnails/print_mushroomburger.png" alt="&quot;Mushroom Burger&quot;" title="&quot;Mushroom Burger&quot;"><img src="thumbnails/print_basilisksmeal.png" alt="&quot;Basilisk's Meal&quot;" title="&quot;Basilisk's Meal&quot;"></a><a href="https://ko-fi.com/s/f15f3905d8" target="_blank"><img src="thumbnails/print_freedomcosts.png" alt="&quot;Freedom Costs&quot;" title="&quot;Freedom Costs&quot;"></a><a href="https://ko-fi.com/s/22d37a0505" target="_blank"><img src="thumbnails/print_mercury.png" alt="&quot;Mercury&quot;" title="&quot;Mercury&quot;"></a><a href="https://ko-fi.com/s/d81993d20e" target="_blank"><img src="thumbnails/print_tombplucker.png" alt="&quot;Tomb Plucker&quot;" title="&quot;Tomb Plucker&quot;"><img src="thumbnails/print_straycargo.png" alt="&quot;Stray Cargo&quot;" title="&quot;Stray Cargo&quot;"></a>
-	</div>
-  </section>
-  <section id="d" >
-    <div class="a5demo">
-      <a href="https://ko-fi.com/s/191f0cc1b0" target="_blank"><img src="thumbnails/print_sekoittaa.png" alt="&quot;Sekoittaa&quot;" title="&quot;Sekoittaa&quot;"></a><a href="https://ko-fi.com/s/c12010305b" target="_blank"><img src="thumbnails/print_lightsummerpruning.png" alt="&quot;Light Summer Pruning&quot;" title="&quot;Light Summer Pruning&quot;"></a><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!"><img src="thumbnails/print_comingsoon.png" alt="Coming soon!" title="Coming soon!">
-	</div>
-  </section>
-  <section id="c">
-    <div id="flowerSign" class="cPrice">$10</div>
-	<img src="ui/sign_stickers.png" alt="stickersステック" title="stickersステック" class="signStickers">
-	<hr>
-	<div class="a7demo">
-	  <a href="https://ko-fi.com/s/2fe85de556" target="_blank"><img src="thumbnails/luchinortinvasion_luchino.png" alt="Luchino Invasion sticker sheet" title="Luchino Invasion sticker sheet"><img src="thumbnails/luchinortinvasion_norton.png" alt="Norton Invasion sticker sheet" title="Norton Invasion sticker sheet"></a><a href="https://ko-fi.com/s/5e709ec54e" target="_blank"><img src="thumbnails/sheet_douwata.png" alt="&quot;Doumeki x Watanuki&quot; ×××HOLiC sticker sheet" title="&quot;Doumeki x Watanuki&quot; ×××HOLiC sticker sheet"></a>
-	</div>
-  </section>
-  <section id="e">
-    <div id="flowerSign" class="ePrice">$2.50</div>
-    <div class="stickerdemo">
-	  <a href="https://ko-fi.com/s/b243d80241" target="_blank"><img src="thumbnails/fiveboogers_joseph.png" alt="&quot;Joseph&quot; of the Five Boogers collection" title="&quot;Joseph&quot; of the Five Boogers collection"><img src="thumbnails/fiveboogers_aesop.png" alt="&quot;Aesop&quot; of the Five Boogers collection" title="&quot;Aesop&quot; of the Five Boogers collection"><img src="thumbnails/fiveboogers_richard.png" alt="&quot;Richard&quot; of the Five Boogers collection" title="&quot;Richard&quot; of the Five Boogers collection"></a><a href="https://ko-fi.com/s/7ef69e5653" target="_blank"><img src="thumbnails/outlastboogers_trager.png" alt="&quot;Trager&quot; of the Outlast Boogers collection" title="&quot;Trager&quot; of the Outlast Boogers collection"></a><a><a href="https://ko-fi.com/s/77db32f0e2" target="_blank"><img src="thumbnails/sticker_glaakiyaoi.png" alt="Gla'aki Yaoi sticker" title="&quot;Gla'aki Yaoi&quot; sticker"></a><a href="https://ko-fi.com/s/f276263188" target="_blank"><img src="thumbnails/sticker_leapinglagomorph.png" alt="Gla'aki Yaoi sticker" title="&quot;Leaping Lagomorph&quot; sticker"></a>
-	</div>
-	<div class="stickerdemo">
-	  <a href="https://ko-fi.com/s/5205c6196f" target="_blank"><img src="thumbnails/idvbust_william.png" alt="&quot;William&quot; of the IDV Bust collection" title="&quot;William&quot; of the IDV Bust collection"><img src="thumbnails/idvbust_norton.png" alt="&quot;Norton&quot; of the IDV Bust collection" title="&quot;Norton&quot; of the IDV Bust collection"><img src="thumbnails/idvbust_ganji.png" alt="&quot;Ganji&quot; of the IDV Bust collection" title="&quot;Ganji&quot; of the IDV Bust collection"></a><a href="https://ko-fi.com/s/5205c6196f" target="_blank"><img src="thumbnails/idvbust_melly.png" alt="&quot;Melly&quot; of the IDV Bust collection" title="&quot;Melly&quot; of the IDV Bust collection"></a>
-	</div>
-  </section>
-  <section id="g">
-  </section>
-  <section id="f">
-    <div style="position:absolute;background:url('ui/speech_bubble.png');background-position:left top;top:40px;background-repeat:no-repeat;height:134px;width:220px;box-sizing:border-box;padding:14px 13px 7px 10px;color:#000000;font-family:'ms pgothic', sans-serif;animation:lateBootDrop 3s ease-in;font-size:12px;cursor:crosshair;" id="speechbubble_text">
-	  Thanks for stopping by. Feel free to touch the merch and ask questions.
-	</div>
-  </section>
-  <section id="h">
-  </section>
-  <section id="i">
-    <h2>Contact</h2>
-      <p>Direct inquiries and submissions <a href="mailto:0ekekddddd@protonmail.com">by e-mail</a>.</p>
-    <h2>General Commission Info</h2>
-    <ul>
-      <li>Every commission is defined by the time it takes to work on a request, not the exclusivity of the artwork. Separately, every serviced image is explicit property of Gristlepod, and licensed to commissioner (View Image Rights &amp; Usage section).</li>
-      <li>Terms of service may change at any time. Slot holders will be informed of updated terms during queue.</li>
-      <li>All payments (USD) are taken through Ko-fi unless otherwise specified.</li>
-      <li>TAT for each piece will vary from a week to months, so put down deadlines upon discussion.</li>
-      <li>I accept price negotiations and offer alternatives to rejected requests.</li>
-    </ul>
-	<h2>Before you order...</h2>
-    <ul>
-      <li>I am a character artist! Please play into my strengths.</li>
-      <li>Have a reference sheet or image at the ready.</li>
-      <li>It helps to tell me what you are using the design or art for during the composition stage.</li>
-    </ul>
-	<center><b>Composition sketch &rarr; Flat &rarr; Rendering</b><br><span style="color:#00000050;">This is what the service process will look like.</span></center>
-	<p>Final price factors complexities. This may mean extra fees for intricate details and complex angles, and other times no extra fees will be included. These fees will be included on the receipt.</p>
-	<h2>Payments &amp; Refunds</h2>
-      <p>Payment upfront, or talk to me about a two payment arrangement. For two-payments, 50% upfront and 50% after delivery.</p>
-      <p>Full refunds are issued if the piece hasn't been started on record and provided visual proof. A piece [after composition stage] is invalid for refund.</p>
-	<h2>Submission Guidelines</h2>
-	<h3>Yes!</h3>
-    <p>Character design, humanoids, reptiles, mammals, and anthropomorphics of the sort. Varying degrees of bloodshed n' terror.</p>
-	<h3>Sure.</h3>
-    <p>Vehicles/machinery, and other types of anthropomorphics. Reference sheets. I also offer both erotica with a specialty in pin-up style artwork and Not-Safe-For-Work submissions, but please don't order before e-mailing me privately about details. Let's keep it inoffensive and fun for all.</p>
-	<h3>No.</h3>
-    <p>Public figures. Some requests involving real people may be declined. <b>Requests of underage abuse depictions (CSAM) result in a blacklist position</b>.</p>
-  </section>
-  <section id="j">
-    <h2>Updates &amp; Delivery</h2>
-	<p>Commission updates are administered to the address that the submission was sent from for record purposes.</p>
-	<p>Ko-Fi merchandise inquiries are accepted by both e-mail and Ko-fi direct messages. Shipment will take 1-3 days after placed order.</p>
-    <h2>Physical Goods</h2>
-	<p>All prints, stickers, 3d printed products are home-manufactured and secured in salvaged packaging (recyclable plastic, envelopes, and absorbants). My brand is found with self-sustainability as the model and third party support kept minimal, and I encourage my backers to follow suit for a kinder, stable community.</p>
-    <p>Being situated in the US, international buyers are asked to brush up on the <a href="https://support.pirateship.com/en/articles/3859826-list-of-countries-not-currently-accepting-shipments-from-usps-or-ups" target="_blank">list of countries</a> our postal service is restricted to send to. A refund will be issued to all addresses subject.</p>
-	<h2>Image Rights &amp; Usage</h2>
-	<p style="background:#b0cf8870;color:#00000090;padding:2px 10px 2px 10px;"><b>Gristlepod</b>: creative label &amp; service provider.<br><b>Work</b>: media, design, or concept created by human.</p>
-	<p>I reserve the right to post work-in-progress screencaps and finished works on my SNS (Social Network Service).</p>
-	<p>By publishing or resharing my works, you agree to the following terms.</p>
-	<h3>Buyer Rights</h3>
-	<ul id="buyerRights">
-	  <li>Cropping, filtering, applying any modifications that don't violate neighboring terms.</li>
-	  <li>Printing work for personal usage (e.g. stickers, screen-printing.)</li>
-	  <li>Posting commissioned work on SNS, or any independent websites.</li>
-	  <li>Credit is not necessary, but encouraged.</li>
-	</ul>
-	<h3>Prohibited</h3>
-	<ul id="prohibited">
-	  <li><b>Do not claim creation of artwork itself.</b></li>
-	  <li><b>Do not redistribute commission or original pieces for profit unless permitted.</b> Contact me about commercial cases and we can work something out.</li>
-	  <li><b>Do not use my pieces for cryptocurrency/blockchain databases.</b> This is non-negotiable, my work model is based in wide accessibility.</li>
-	  <li><b>Feeding any work developed under Gristlepod on public learning machines is unauthorized.</b> Not supported under modification as permitted in Buyer's Rights. Publicly training or posting generative AI material of my artwork threatens/damages my trade.</li>
-	</ul>
-  </section>
+	  <div class="imgSumm">
+	    <h2><a href="terms">digital paintings</a></h2>
+		<ul>
+		  <li>full-rendered illustrations.</li>
+		  <li>collectable art, website banners, concept art, and album covers.</li>
+		  <li>original characters, canon characters, background work.</li>
+		</ul>
+		<p><a href="terms">Read more...</a></p>
+	  </div>
+    </section>
+    <section class="imgBlock" id="b" style="background-image:url('ui/thumbnails/sk1.png');">
+	  <div class="flowerSign">
+	    $10
+	  </div>
+	  <div class="imgSumm">
+	    <h2><a href="terms.html#sketches">quick digital sketches</a></h2>
+		<ul>
+		  <li>a quick sketch of virtually anything for $10.</li>
+		  <li>$5 fee for colors.</li>
+		  <li>finished within 24 hours, most budget-friendly way to support me.</li>
+		</ul>
+		<p><a href="terms#sketches">Read more...</a></p>
+	  </div>
+    </section>
+  </div>
 </div>
 <section id="footer">
   &copy; 2025 Gristlepod. All rights reserved.
