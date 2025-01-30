@@ -4,84 +4,90 @@
 <title>gristlepod | church of luchino</title>
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="favicon.png">
-<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="church of luchino">
+<link rel="stylesheet" href="../ui/css.css">
 <meta name="author" content="pod">
-<link rel="stylesheet" href="../ui/pageStyle_multi.css">
+<script src="content.js"></script>
 <style>
+:root{
+  --jellyGradient:linear-gradient(180deg, #58565e 5%,#292630 39%, #5f586e 92%);
+}
 body{
   background:url("images/darkwoods.png"), #0e0d0d;
   background-size:400px;
   background-repeat:repeat-x;
 }
-a, a:visited, a:hover{
-  color:#000000;
+@media(min-width:646px){
+  #top{
+  background:url("layout_pieces/layout_header_multi.png") !important;}
 }
-h3{
-  filter: drop-shadow(1px 1px 0 #000000) drop-shadow(-1px 1px 0 #000000) drop-shadow(0 -1px 0 #000000) drop-shadow(1px 0 #000000);
-  color:#f2efe6;
-  margin:0;
+@media screen and (max-width:645px){
+  #top{
+  background:url("layout_pieces/layout_header_single.png") !important;}
 }
-.layout_header{
-  background-image:url("layout_pieces/layout_header.png");
+.inContent .inline{
+  width:90%;
+  margin:0 auto;
+  border:#6e4f26 3px;
+  background:#3d3d40;
+  border-radius:0px;
+  box-shadow:0;
 }
-.leftside{
-  background-image:url("layout_pieces/leftside_bgpattern.gif");
-}
-.rightside{
-  background-image:url("layout_pieces/rightside_bgpattern.gif");
+.inContent .inline img:hover{
+  cursor:pointer;
 }
 .photo{
   border:solid 1px #000000;
   height:120px;
 }
 </style>
-<script src="content.js"></script>
 </head>
 <body>
-<table class="body">
-  <tr>
-    <td colspan="4">
-      <map name="layout_header">
-        <area shape="rect" alt="[Home]" coords="209,19,631,89" href="/" target="_parent">
-      </map>
-      <div class="layout_header"><img src="../ui/layout_pieces_multi/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
-    </td>
-  </tr>
-  <tr>
-    <td class="layout-leftborder">
-    </td>
-    <td class="leftside">
-	  <div style="width:90%;margin:0 auto;border:#6e4f26 3px outset;background:#3d3c36;">
+<map name="top_links">
+  <area shape="rect" alt="[Home]" coords="209,19,631,89" href="../" target="_parent">
+</map>
+<map name="bottom_links">
+  <area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto: 0ekekddddd@protonmail.com" target="_parent">
+  <area alt="[Home]" title="[Home]" href="/" coords="131,49,182,95" shape="rect" target="_parent">
+  <area alt="[Log]" title="[Log]" href="../log/" coords="240,57,270,85" shape="rect" target="_parent">
+  <area target="_parent" alt="[TOS/International]" title="[TOS/International]" href="../art/" coords="84,62,117,88" shape="rect">
+  <area alt="[My Music]" title="[My Music]" href="../music/" coords="196,58,227,86" shape="rect" target="_parent">
+</map>
+<div id="body">
+  <section id="top">
+    <img src="../ui/layout_pieces/layout_header_transparent.gif" alt="" usemap="#top_links">
+  </section>
+  <div class="inContent">
+    <section class="lContainer"><div class="inline" style="border-style: outset outset none outset;">
 	  <img src="graphic_int/entrance.png" onmouseover="this.src='graphic_int/entrance-hover.png'" onmouseout="this.src='graphic_int/entrance.png'" onclick="selectLink('entrance')" alt="Entrance" title="Entrance"><br>
       <img src="graphic_int/who_is_luchino.png" onmouseover="this.src='graphic_int/who_is_luchino-hover.png'" onmouseout="this.src='graphic_int/who_is_luchino.png'" onclick="selectLink('whoIsLuchino')" alt="Who Is Luchino?" title="Who Is Luchino?"><br>
       <img src="graphic_int/luchinos_mutations.png" onmouseover="this.src='graphic_int/luchinos_mutations-hover.png'" onmouseout="this.src='graphic_int/luchinos_mutations.png'" onclick="selectLink('luchinosMutations')" alt="Luchino's Mutations" title="Luchino's Mutations"><br>
-      <img src="graphic_int/themes_of_ambiguity.png" onmouseover="this.src='graphic_int/themes_of_ambiguity-hover.png'" onmouseout="this.src='graphic_int/themes_of_ambiguity.png'" onclick="selectLink('ambiguityThemes')" alt="Themes Of Ambiguity" title="Themes Of Ambiguity"><br>
+      <img src="graphic_int/themes_of_ambiguity.png" onmouseover="this.src='graphic_int/themes_of_ambiguity-hover.png'" onmouseout="this.src='graphic_int/themes_of_ambiguity.png'" onclick="selectLink('ambiguityThemes')" alt="Themes Of Ambiguity" title="Themes Of Ambiguity">
+	  </div>
+	  <div class="inline"  style="border-style: none outset outset outset;">
       <img src="graphic_int/list_of_headcanons.png" onmouseover="this.src='graphic_int/list_of_headcanons-hover.png'" onmouseout="this.src='graphic_int/list_of_headcanons.png'" onclick="selectLink('headcanonsList')" alt="List Of Headcanons" title="List Of Headcanons"><br>
       <img src="graphic_int/other_testimonies.png" onmouseover="this.src='graphic_int/other_testimonies-hover.png'" onmouseout="this.src='graphic_int/other_testimonies.png'" onclick="selectLink('otherTestimonies')" alt="Other Testimonies" title="Other Testimonies"><br>
       <img src="graphic_int/luchinort.png" onmouseover="this.src='graphic_int/luchinort-hover.png'" onmouseout="this.src='graphic_int/luchinort.png'" onclick="selectLink('luchinort')" alt="Sect Of Luchinort" title="Sect Of Luchinort"><br>
       <img src="graphic_int/photo_album.png" onmouseover="this.src='graphic_int/photo_album-hover.png'" onmouseout="this.src='graphic_int/photo_album.png'" onclick="selectLink('photoAlbum')" alt="Photo Album" title="Photo Album">
-	  </div><br>
-	  <center><img src="images/luchino_statue.png" title="In the middle of the atrium, stands a statue in his likeness." alt="A figure I modeled of Luchino." style="border:#6e4f26 3px outset;"></center>
-    </td>
-    <td class="rightside">
-      <div id="quoteDisplay" onload="randomLuchinoQuote(random)"></div>
-      <div id="display">
-      <noscript><p>Your browser is unable to run this library. Please disable any javascript blockers or ensure your browser runs javascript.</p></noscript>
-	  <h3>Valaistuminen</h3>
-	  <div class="rightbox"><p>Luchino inspires me through life's ache and disorder. He represents the heart-to-heart message from his designers about their own passions for herpetology, Lovecraft, and gothic metamorphose.</p><p>When I feel down, I like to turn to Luchino in the forms of official art and fanworks. Please welcome yourself to read about Luchino, and my bond with his media.</p></div><br>
-	  <h3>How I Can Spread The Love of Luchino?</h3>
-	  <div class="rightbox"><p>Luchino Diruse as a concept deserves much better than just the appreciation of one person, as he is very underappreciated in the Identity V online and local community.</p><ol><li>Post more about him on SNS! Many fans are horrifically ignorant about Luchino. There are more of us than we realize.</li><li><a href='mailto:'>E-Mail me</a> telling me what you like about Luchino using the subject tag &quot;Luchino Mail&quot;. All testimonials will be posted here for all to see.</li></ol><p>Recovery! Rebirth! Emerge. Touch Luchino to keep reading.</p>
 	  </div>
+	  <hr>
+    </section>
+    <section class="rContainer" id="display">
+	  <section>
+      <noscript><p>Your browser is unable to run this library. Please disable any javascript blockers or ensure your browser runs javascript.</p></noscript>
+	  <div class="title">&rarr; Valaistuminen</div>
+	  <div><p>Luchino inspires me through life's ache and disorder. He represents the heart-to-heart message from his designers about their own passions for herpetology, Lovecraft, and gothic metamorphose.</p><p>When I feel down, I like to turn to Luchino in the forms of official art and fanworks. Please welcome yourself to read about Luchino, and my bond with his media.</p></div><br>
+	  <div class="title">&rarr; How Can I Love Luchino</div>
+	  <div><p>Luchino Diruse as a concept deserves much better than just the appreciation of one person, as he is very underappreciated in the Identity V online and local community.</p><ol><li>Post more about him on SNS! Many fans are horrifically ignorant about Luchino. There are more of us than we realize.</li><li><a href='mailto:'>E-Mail me</a> telling me what you like about Luchino using the subject tag &quot;Luchino Mail&quot;. All testimonials will be posted here for all to see.</li></ol><p>Recovery! Rebirth! Emerge. Touch Luchino to keep reading.</p>
+	  </section><br>
 	  <center><a href='#' onclick='selectLink(`whoIsLuchino`)'><img src='images/hunt_luchino_40x40.gif' alt='Click me to proceed'></a></center>
-      </div>
-    <td class="layout-rightborder">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="4" style="position:relative;">
-    <iframe src="layoutFooter_multi.html" style="width:644px;border:none;height:130px;"></iframe>
-    </td>
-  </tr>
-</table>
+      </section>
+    </section>
+  </div>
+  <section id="bottom">
+    <img src="../ui/layout_pieces/layout_bottom_transparent.gif" alt="" usemap="#bottom_links">
+  </section>
+</div>
 </body>
 </html>

@@ -3,19 +3,12 @@
 <head>
 <title>gristlepod | music</title>
 <meta charset="utf-8"/>
-<link rel="shortcut icon" type="image/jpg" href="https://0ekekddddd.github.io/favicon.png">
-<meta name="description" content="">
-<meta name="author" content="Pat">
-<link rel="stylesheet" href="../ui/pageStyle_minimal.css">
-<style>
-body{
-}
-li {
-  list-style-image: url('images/tune_icon.png');
-  padding-right:0px;
-  padding-left:0px;
-}
-</style>
+<link rel="shortcut icon" type="image/jpg" href="favicon.png">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="pod's log">
+<link rel="stylesheet" href="../ui/css.css">
+<link rel="stylesheet" href="css.css">
+<meta name="author" content="pod">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript">
 $(window).load(function() {
@@ -59,48 +52,54 @@ function run(link, player) {
   }
 });
 </script>
+<style>
+body{
+}
+li {
+  list-style-image: url('images/tune_icon.png');
+  padding-right:0px;
+  padding-left:0px;
+}
+</style>
 </head>
 <body>
-<table class="body">
-  <tr>
-    <td colspan="4">
-      <map name="layout_header">
-        <area shape="rect" alt="[Home]" coords="395,7,647,84" href="/">
-      </map>
-      <div class="layout_header"><img src="../ui/layout_pieces_minimal/layout_header_transparent.gif" style="width:660px;border:0;" alt="" usemap="#layout_header"></div>
-    </td>
-  </tr>
-  <tr>
-    <td class="layout-leftborder">
-    </td>
-    <td class="leftside">
-      <div class="leftbox">
-        <p>Production, mixing, visual renders made by yours truly.</p>
-		<p>Nothing too serious.</p>
-        <p>My music is remix-friendly. All I ask is that my work is not reposted on Spotify and that I'm given proper credit.</p>
-      </div><br>
-      <center><img src="images/openmpt-button01.png" alt="OpenMPT User."></center>
-    </td>
-    <td class="rightside">
-      <br>
-      <center><audio id="audio" controls></audio></center>
-    <ul id="tracklist">
-       <li><a href="audios/PasteMarchDivision.flac">Paste March Division</a> 2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
-       <li><a href="audios/Bit_Silly.flac">bit silly</a> 2023.04.22 // <a href="https://www.mediafire.com/file/fsnajsvgo54vp5j/Bit_Silly.flac/file" target="_blank">FLAC download.</a></li>
-       <li><a href="audios/3r+958ff.flac">3r+958ff</a> 2024.11.04 // <a href="https://www.mediafire.com/file/qww7jtwjkrjuhwv/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></li>
+<map name="top_links">
+  <area shape="rect" alt="[Home]" coords="389,19,631,89" href="../" target="_parent">
+</map>
+<map name="bottom_links">
+    <area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="119,64,211,76" href="mailto: 0ekekddddd@protonmail.com" target="_parent">
+     <area alt="[Home]" title="[Home]" href="../" coords="242,51,266,74" shape="rect" target="_parent">
+    <area alt="[Log]" title="[Log]" href="../log" coords="295,62,380,76" shape="rect" target="_parent">
+     <area target="_parent" alt="[Art]" title="[Art]" href="../art" coords="383,62,505,77" shape="rect">
+    <area alt="[My Music]" title="[My Music]" href="../music" coords="509,62,619,76" shape="rect" target="_parent">
+</map>
+<div id="minimalBody">
+  <section id="minimalTop">
+    <img src="../ui/layout_pieces_minimal/layout_header_transparent.gif" alt="" usemap="#top_links">
+  </section>
+  <div class="inContent">
+    <section class="lContainerMinimal">
+	  <center><audio id="audio" controls style="width:100%;"></audio></center>
+    </section>
+    <section class="rContainerMinimal">
+	  <div class="title">&rarr; Music</div>
+      <div>
+	  <ul id="tracklist">
+        <li><a href="audios/PasteMarchDivision.flac">Paste March Division</a> 2023.03.03 // <a href="https://www.mediafire.com/file/326gpcei2vzrnzg/PasteMarchDivision.it/file" target="_blank"><img src="images/module_icon.png" alt=""></a> // <a href="https://www.mediafire.com/file/oy353fvqk4vp24h/PasteMarchDivision.flac/file" target="_blank">FLAC download.</a></li>
+        <li><a href="audios/Bit_Silly.flac">bit silly</a> 2023.04.22 // <a href="https://www.mediafire.com/file/fsnajsvgo54vp5j/Bit_Silly.flac/file" target="_blank">FLAC download.</a></li>
+        <li><a href="audios/3r+958ff.flac">3r+958ff</a> 2024.11.04 // <a href="https://www.mediafire.com/file/qww7jtwjkrjuhwv/3r%252B958ff.flac/file" target="_blank">FLAC download.</a></li>
       </ul>
-      <center>That's the end of the library!</center>
-      <hr>
-      <center><img src="images/cover.png" alt="The cover of my 4ever collection." style="width:50%;"></center>
-    </td>
-    <td class="layout-rightborder">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="4" style="position:relative;">
-    <iframe src="../ui/layoutFooter_minimal.html" style="width:660px;border:none;height:91px;"></iframe>
-    </td>
-  </tr>
-</table>
+	  </div>
+	  <div>
+	    <p>Production, mixing, visual renders made by yours truly.<br>My music is remix-friendly. All I ask is that my work is not reposted on Spotify and that I'm given proper credit.</p>
+      </div>
+	  <center><a href="https://openmpt.org/download" target="_blank"><img src="images/openmpt-button01.png" alt="Made with OpenMPT" title="Made with OpenMPT"></a><a href="https://ko-fi.com/gristlepod" target="_parent"><img src="images/donate.gif" alt="Support me!" title="Support me!"></a></center>
+    </section>
+  </div>
+  <section 
+  id="minimalBottom">
+    <img src="../ui/layout_pieces_minimal/layout_bottom_transparent.gif" alt="" usemap="#bottom_links">
+  </section>
+</div>
 </body>
 </html>

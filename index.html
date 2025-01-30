@@ -4,47 +4,50 @@
 <title>gristlepod | home</title>
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="favicon.png">
-<meta name="description" content="">
-<meta name="author" content="d5">
-<link rel="stylesheet" href="ui/pageStyle_multi.css">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="pod's homepage">
+<link rel="stylesheet" href="ui/css.css">
+<meta name="author" content="pod">
 </head>
 <body>
-<table class="body">
-  <tr>
-    <td colspan="4">
-      <map name="layout_header">
-        <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
-      </map>
-      <div class="layout_header"><img src="./landing/layout_pieces/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
-    </td>
-  </tr>
-  <tr>
-    <td class="layout-leftborder">
-    </td>
-    <td class="leftside">
-      <div class="leftbox">
-        <p>online<b>pod</b> &mdash; Creative Developer, Professional Illustrator, 3d Artist, Tracker Musician. Reptile probably.</p>
-      </div><br>
-      <div class="leftbox">
-	    <p>irl<b>pod</b> &mdash; Computer hobbyist. Web developer &amp; designer. Pursuing Integrated Design.</p>
-		<p>Inspired by all thats noisy &amp; clutterful.</p>
-      </div>
-    </td>
-    <td class="rightside">
+<map name="top_links">
+  <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
+</map>
+<map name="bottom_links">
+  <area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto: 0ekekddddd@protonmail.com" target="_parent">
+  <area alt="[Home]" title="[Home]" href="/" coords="131,49,182,95" shape="rect" target="_parent">
+  <area alt="[Log]" title="[Log]" href="log/" coords="240,57,270,85" shape="rect" target="_parent">
+  <area alt="[TOS/International]" title="[TOS/International]" href="art/" coords="84,62,117,88" shape="rect"  target="_blank">
+  <area alt="[My Music]" title="[My Music]" href="music/" coords="196,58,227,86" shape="rect" target="_parent">
+</map>
+<div id="body">
+  <section id="top">
+    <img src="ui/layout_pieces/layout_header_transparent.gif" alt="" usemap="#top_links">
+  </section>
+  <div class="inContent">
+    <section class="lContainer">
+      <section class="inline">
+	    <div>
+	      <p>online<b>pod</b> &mdash; Creative Developer, Professional Illustrator, 3d Artist, Tracker Musician. Reptile probably.</p>
+	    </div>
+	    <div>
+	      <p>irl<b>pod</b> &mdash; Computer hobbyist. Web developer &amp; designer. Pursuing Integrated Design.</p>
+        </div>
+	  </section>
+	  <hr>
+    </section>
+    <section class="rContainer">
+	  <div class="title">&rarr; Hello World.</div>
+	  <div>
+		<p>Welcome readers of the other side. This website is intended to be read on a monitor (800px minimum). Javascript will be labeled, kept minimal. Mobile-navigable &amp; lightweight for ur viewership, all managed by me.</p>
+        <details><summary>Please note that this page is intended for adults. (Click here.) </summary><p>Generally safe to read in public. In-site or off-site content may feature explicit content.<p>
+		<p>Anything I develop will root back to my homepage (where you are right now). For starters read up on the update log or view the sitemap below.</p>Under age viewers are asked to follow additional content warnings.</p></details><br>
+	  </div>
+	  <hr>
+	  <div class="title">&rarr; Sitely Roadmap</div>
       <table>
-        <tr><td colspan="2" id="tabletitle">&rarr; To The Net, From Pod</td></tr>
-      </table><br>
-        <div class="rightbox">
-		  <p>Welcome readers of the other side. This website is intended to be read on a monitor (800px minimum). Javascript will be labeled, kept minimal. Mobile-navigable &amp; lightweight for ur viewership, all managed by me <normal style="color:#636363;">(pod, they/them)</normal>.</p>
-          <details><summary>Please note that this page is intended for adults. (Click here.) </summary><p>In-site and off-site content may feature explicit references to violence, erotica, and horror.<p>Under age viewers are asked to follow additional content warnings.</p></details>
-          <p>Anything I develop will root back to my homepage (where you are right now). For starters read up on the update log or view the sitemap below.</p>
-		</div><br>
-	  <table>
-        <tr><td colspan="2" id="tabletitle">&rarr; Sitely Roadmap</td></tr>
-      </table>
-      <table id="menu">
-        <tr><td>==> <a href="/updatelog/">Update Log</a></td><td>Documents major sitely changes or "what's new".</td></tr>
-        <tr><td colspan="2">==> <a href="/log/">ブログ Log</a>
+        <tr><td>==> <a href="updatelog/">Update Log</a></td><td>Documents major sitely changes or "what's new".</td></tr>
+        <tr><td colspan="2">==> <a href="log/">ブログ Log</a>
         <ul>
           <li><a href="log/entry/bookmarks">Bookmarks</a></li>
           <li><a href="log/entry/prospectoridvguide">Golden Guide To Playing Prospector</a></li>
@@ -60,10 +63,8 @@
           <li><a href="log/entry/handinavibuildlog">Handinavi Build Log</a></li>
           <li><a href="log/entry/openmptguide">OpenMPT Guide</a></li>
         </ul></td></tr>
-        <tr><td>==> <a href="wardrobe/" target="_parent">Wardrobe</a>
-        </td><td>An interactive <normal style="color:#8f3b3b;">Javascript-reliant</normal> library of my clothes.</td></tr>
         <tr><td>==> <a href="luchino_shrine/" target="_parent">Church of Luchino</a>
-        </td><td>The ultimate Luchino Diruse shrine. <normal style="color:#8f3b3b;">Javascript warning</normal>.</td></tr>
+        </td><td>The ultimate Luchino Diruse shrine.</td></tr>
         <tr><td colspan="2">==> Support me
         <ul>
           <li><a href="art/" target="_blank">イラスト Art</a></li>
@@ -76,19 +77,15 @@
         </ul></td></tr>
         <tr><td><a href="music/">私の音 My Music</a></td><td>Free FLAC's and modules.</td></tr>
       </table>
-      <hr>
-      <center><img src="./landing/buttons/breakcorefan.jpg" alt="" title="I made this!"> <img src="./landing/buttons/poweredbydebian.gif" alt=""></center>
-      <center><a href="https://notepad-plus-plus.org/" target="_blank"><img src="./landing/buttons/notepadpp_button.png" alt="Notepad++"></a> <a href="https://www.hplovecraft.com/" target="_blank"><img src="./landing/buttons/hplabutn.gif" alt="HP Lovecraft Archive"></a></center>
-      <center><img src="./landing/buttons/html_button.gif" alt="HTML badge" title="This site is hand-coded!"></center>
-    </td>
-    <td class="layout-rightborder">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="4" style="position:relative;">
-    <iframe src="./landing/layoutFooter.html" style="width:644px;border:none;height:130px;"></iframe>
-    </td>
-  </tr>
-</table>
+	  <hr>
+	  <center><img src="ui/buttons/breakcorefan.jpg" alt="" title="I made this!"> <img src="ui/buttons/poweredbydebian.gif" alt=""></center>
+      <center><a href="https://notepad-plus-plus.org/" target="_blank"><img src="ui/buttons/notepadpp_button.png" alt="Notepad++"></a> <a href="https://www.hplovecraft.com/" target="_blank"><img src="ui/buttons/hplabutn.gif" alt="HP Lovecraft Archive"></a></center>
+      <center><img src="ui/buttons/html_button.gif" alt="HTML badge" title="This site is hand-coded!"></center>
+    </section>
+  </div>
+  <section id="bottom">
+    <img src="ui/layout_pieces/layout_bottom_transparent.gif" alt="" usemap="#bottom_links">
+  </section>
+</div>
 </body>
 </html>

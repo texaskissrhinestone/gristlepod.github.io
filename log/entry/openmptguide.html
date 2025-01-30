@@ -4,29 +4,42 @@
 <title>gristlepod | log</title>
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="favicon.png">
-<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="pod's log">
+<link rel="stylesheet" href="../../ui/css.css">
+<link rel="stylesheet" href="../css.css">
 <meta name="author" content="pod">
-<link rel="stylesheet" href="../../ui/pageStyle_multi.css">
-<link rel="stylesheet" href="../changeBackground.css">
+<style>
+td:nth-child(1){
+  image-rendering: crisp-edges;
+  background-repeat:no-repeat;
+  background-size: 110px;
+  height: 100px;
+  width: 110px;
+}
+</style>
 </head>
 <body>
-<table class="body">
-  <tr>
-    <td colspan="4">
-      <map name="layout_header">
-        <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
-      </map>
-      <div class="layout_header"><img src="../../ui/layout_pieces_multi/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
-    </td>
-  </tr>
-  <tr>
-    <td class="layout-leftborder">
-    </td>
-    <td class="leftside">
-      <iframe src="../../ui/pageNavigation.html" style="width:191px;border:none;"></iframe>
-    </td>
-    <td class="rightside">
-      <h3>OpenMPT (1.31.04) Guide <normal style="font-size:10px;">* Notes thinly disguised as a newbie tutorial</normal></h3>
+<map name="top_links">
+  <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
+</map>
+<map name="bottom_links">
+  <area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto: 0ekekddddd@protonmail.com" target="_parent">
+  <area alt="[Home]" title="[Home]" href="/" coords="131,49,182,95" shape="rect" target="_parent">
+  <area alt="[Log]" title="[Log]" href="../../log/" coords="240,57,270,85" shape="rect" target="_parent">
+  <area target="_parent" alt="[TOS/International]" title="[TOS/International]" href="../../art/" coords="84,62,117,88" shape="rect">
+  <area alt="[My Music]" title="[My Music]" href="../../music/" coords="196,58,227,86" shape="rect" target="_parent">
+</map>
+<div id="body">
+  <section id="top">
+    <img src="../../ui/layout_pieces/layout_header_transparent.gif" alt="" usemap="#top_links">
+  </section>
+  <div class="inContent">
+    <section class="lContainer">
+	  <a href="../" target="_parent"><img src="../../ui/user_int/goback_button.png" alt=""></a>
+    </section>
+    <section class="rContainer">
+	  <div class="title">&rarr; OpenMPT (1.31.04) Guide <normal style="font-size:10px;">* Notes thinly disguised as a newbie tutorial</normal> </div>
       <p>If you want to know how I made the stuff on my music page, I've been using OpenMPT for some time and some of my friends want to know how to use it. This ugly, #fffff spreadsheet is where it starts.</p>
       <p>The goal throughout this entry is to not use the plugins rack (but there's no shame in using it. That being said, scroll to the bottom for a list of plugins I use.)</p>
       <h3>What Should I Know Before I Start Composing?</h3>
@@ -62,15 +75,11 @@
       <h3>Synth1</h3>
       <p>This plugin is as barebones as synthesis can get, in a good way. I use this to create every synth and sometimes even the percussions I use. You can quite literally make both a beefy, Phatworld-like bassline on one bank, and a whole ambient library in the other. Would recommend playing around with even outside of MPT.</p>
       <p>Download @ <a href="https://web.archive.org/web/20190331141735/http://www.geocities.jp/daichi1969/softsynth/#downmac">www.geocities.jp/daichi1969/softsynth/</a></p>
-    </td>
-    <td class="layout-rightborder">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="4" style="position:relative;">
-    <iframe src="../../ui/layoutFooter_multi.html" style="width:644px;border:none;height:130px;"></iframe>
-    </td>
-  </tr>
-</table>
+    </section>
+  </div>
+  <section id="bottom">
+    <img src="../../ui/layout_pieces/layout_bottom_transparent.gif" alt="" usemap="#bottom_links">
+  </section>
+</div>
 </body>
 </html>

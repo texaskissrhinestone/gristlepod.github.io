@@ -4,13 +4,13 @@
 <title>gristlepod | log</title>
 <meta charset="utf-8"/>
 <link rel="shortcut icon" type="image/jpg" href="favicon.png">
-<meta name="description" content="">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="pod's log">
+<link rel="stylesheet" href="../../ui/css.css">
+<link rel="stylesheet" href="../css.css">
 <meta name="author" content="pod">
-<link rel="stylesheet" href="../../ui/pageStyle_multi.css">
-<link rel="stylesheet" href="../changeBackground.css">
-</head>
 <style>
-#menu td:nth-child(1){
+td:nth-child(1){
   image-rendering: crisp-edges;
   background-repeat:no-repeat;
   background-size: 110px;
@@ -18,26 +18,30 @@
   width: 110px;
 }
 </style>
+</head>
 <body>
-<table class="body">
-  <tr>
-    <td colspan="4">
-      <map name="layout_header">
-        <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
-      </map>
-      <div class="layout_header"><img src="../../ui/layout_pieces_multi/layout_header_transparent.gif" style="width:644px;border:0;" alt="" usemap="#layout_header"></div>
-    </td>
-  </tr>
-  <tr>
-    <td class="layout-leftborder">
-    </td>
-    <td class="leftside">
-      <iframe src="../../ui/pageNavigation.html" style="width:191px;border:none;"></iframe>
-    </td>
-    <td class="rightside">
-      <h3>Reject Blockchains / Embrace HTML Mosaics.</h3>
-      <p>Table art is a (fairly old) graphic design technique done with HTML table containers by assigning inline background colors to each &lt;td&gt; wrapper.</p>
-      <p>You can recreate pixel sprites from your favorite games in your free time, immortalize pieces for your friends and strangers to see on the internet, or all at the same time. I learned how to do it through the infamous(?) "Sweaty Reisen HTML art" internet meme. If you've become disillusioned with bloat hogs, the re-era for HTML Mosaics are here!</p>
+<map name="top_links">
+  <area shape="rect" alt="[Home]" coords="389,19,631,89" href="/" target="_parent">
+</map>
+<map name="bottom_links">
+  <area shape="rect" alt="[E-Mail Me]" title="[E-mail Me]" coords="43,61,74,88" href="mailto: 0ekekddddd@protonmail.com" target="_parent">
+  <area alt="[Home]" title="[Home]" href="/" coords="131,49,182,95" shape="rect" target="_parent">
+  <area alt="[Log]" title="[Log]" href="../../log/" coords="240,57,270,85" shape="rect" target="_parent">
+  <area target="_parent" alt="[TOS/International]" title="[TOS/International]" href="../../art/" coords="84,62,117,88" shape="rect">
+  <area alt="[My Music]" title="[My Music]" href="../../music/" coords="196,58,227,86" shape="rect" target="_parent">
+</map>
+<div id="body">
+  <section id="top">
+    <img src="../../ui/layout_pieces/layout_header_transparent.gif" alt="" usemap="#top_links">
+  </section>
+  <div class="inContent">
+    <section class="lContainer">
+	  <a href="../" target="_parent"><img src="../../ui/user_int/goback_button.png" alt=""></a>
+    </section>
+    <section class="rContainer">
+	  <div class="title">&rarr; Reject Blockchains / Embrace HTML Mosaics</div>
+      <p>Table art is a (fairly outdated) graphic design technique done with HTML table containers by assigning inline background colors to each &lt;td&gt; wrapper.</p>
+      <p>You can recreate pixel sprites from your favorite games in your free time, immortalize pieces for your friends and strangers to see on the internet, or all at the same time. I learned how to do it through the infamous(?) "Sweaty Reisen HTML art" internet meme. Let's face it, the internet was never meant to be paywalled or scarce. If you've become disillusioned with blockchains, cryptocurrency, and bloat hogs, the re-era for HTML Mosaics are here.</p>
       <h3>HTML Mosaics That I Made</h3>
       <p>All my mosaics are public use. Do not try to copy+paste the code onto your websites or use it as profile decoration because the code is hellishly long.</p>
       <table id="menu">
@@ -51,16 +55,11 @@
           </td>
         </tr>
       </table>
-      <p>Fight against crypto and make silly table art of video game characters for the public to enjoy, just as the internet was intended for.</p>
-    </td>
-    <td class="layout-rightborder">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="4" style="position:relative;">
-    <iframe src="../../ui/layoutFooter_multi.html" style="width:644px;border:none;height:130px;"></iframe>
-    </td>
-  </tr>
-</table>
+    </section>
+  </div>
+  <section id="bottom">
+    <img src="../../ui/layout_pieces/layout_bottom_transparent.gif" alt="" usemap="#bottom_links">
+  </section>
+</div>
 </body>
 </html>
