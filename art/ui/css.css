@@ -213,7 +213,7 @@ nav a:hover{
 	background-size:var(--flowerSignDesktop);
 	padding:23px 0px 0px 0px;
   }
-  #showcase img{height:230px;}
+  #showcase img{height:45vw;}
 }
 /* MOBILE */
 

@@ -53,9 +53,6 @@ details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 #body{width:644px;}
 #minimalBody{width:660px;margin:15px auto 0px auto;}
-#body section, #minimalBody section{
-  min-height:92px;
- }
 #body, #minimalBody{
   margin:0 auto;
 }
@@ -98,7 +95,7 @@ summary{cursor:pointer;color:#000000;}
   section div{
 	border-radius:6px;
   }
-  .inContent{display:flex;min-height:370px;}
+  .inContent{display:flex;min-height:200px;}
   .inContentSingle{display:block;}
   #top{background:url('layout_pieces/layout_header_multi.png');}
   #minimalBottom{background:url('layout_pieces_minimal/layout_bottom.png');}
