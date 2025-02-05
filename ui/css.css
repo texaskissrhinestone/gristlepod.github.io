@@ -10,10 +10,12 @@
 
 /* GLOBAL */
 
-html{scroll-behavior: smooth;}
+html{scroll-behavior: smooth;scrollbar-color: #adb851 #ffffff;
+    scrollbar-width: auto;}
 body{
-  background:url("backgrounds/landing_01.png") no-repeat, url("backgrounds/mingrid.gif") repeat;
-  background-size:300px, auto;
+  background:url("backgrounds/landing_01.png") no-repeat,url('backgrounds/landing_02.png') no-repeat, url("backgrounds/mingrid.gif") repeat;
+  background-size:300px, 300px, auto;
+  background-position:top left, bottom right, top;
   font-family: "MS PGothic", sans-serif; font-size:12px;
   margin: 0 auto;
 }
@@ -25,11 +27,11 @@ hr {
 }
 li {
   list-style-type: "→ ";
-  padding:0px 2px 0px 2px;
 }
 a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
 p, h1, h2, h3, details{padding:0px 10px 0px 10px;}
+ul{margin:0;padding:3px 0px 3px 35px;}
 b{color:#8f3b3b;}
 audio{filter:opacity(80%);}
 section div{
@@ -42,13 +44,9 @@ section div{
   position:relative;
   margin:5px auto 5px;
 }
-table{
-  width:100%;
-}
-td{
-  background-image:url("backgrounds/tone.png");
-  padding:3px;
-}
+table{width:100%;}
+td{padding:3px 4px 3px 4px;}
+td, .rContainer > ul{background-image:url("backgrounds/tone.png");}
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 #body{width:644px;}
@@ -76,6 +74,7 @@ summary{cursor:pointer;color:#000000;}
 }
 .mContainer {background:url('layout_pieces/layout_singlecontainer.png');padding:5px 10px 5px 14px;height:700px;}
 .mContainer div{background:var(--divInset);width:90%;padding:5px;}
+.insetBlock{background:#ffffff !important;min-height:120px;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;}
 .title{
   background: var(--jellyGradient) !important;
   width:auto !important;
