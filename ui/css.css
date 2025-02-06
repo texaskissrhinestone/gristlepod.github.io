@@ -3,6 +3,7 @@
   --linkColor:#616161;
   --selectionColor:#b395ff;
   --jellyGradient:linear-gradient(180deg, #b4cf91 5%,#65943d 39%, #adb851 92%);
+  --jellySolid:#adb851;
  
   --divSolid:linear-gradient(0deg, #ededed 1%, #ffffff 30%);
   --divInset:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
@@ -10,7 +11,7 @@
 
 /* GLOBAL */
 
-html{scroll-behavior: smooth;scrollbar-color: #adb851 #ffffff;
+html{scroll-behavior: smooth;scrollbar-color: var(--jellySolid) #ffffff;
     scrollbar-width: auto;}
 body{
   background:url("backgrounds/landing_01.png") no-repeat, url('backgrounds/landing_02.png') no-repeat, url("backgrounds/mingrid.gif") repeat;
@@ -30,19 +31,22 @@ li {
 }
 a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
-p, h1, h2, h3, h4, details{padding:0px 10px 0px 10px;}
+p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
+h1, h2, h3, h4 {margin:0;}
 ul{margin:0;padding:3px 0px 3px 35px;}
 b{color:#8f3b3b;}
 audio{filter:opacity(80%);}
-section div{
+section > div{
   border:solid 1px;
 }
-.rContainer div, .rContainerMinimal div, .mContainer div{
+.rContainer > div, .rContainerMinimal > div, .mContainer > div{
+  box-sizing:border-box;
+  margin:5px auto 5px;
+}
+.rContainer > div, .rContainerMinimal > div, .mContainer > div{
+  background:var(--divInset);
   box-shadow: inset 0px 0px 3px #ffffff;
   border-color: #3a371b;
-  box-sizing:border-box;
-  position:relative;
-  margin:5px auto 5px;
 }
 table{width:100%;}
 td{padding:3px 4px 3px 4px;}
@@ -59,7 +63,7 @@ summary{cursor:pointer;color:#000000;}
   box-sizing:border-box;
 }
 #top, #singleTop{height:116px;}
-  #minimalTop{background:url('layout_pieces_minimal/layout_header.png');}
+#minimalTop{background:url('layout_pieces_minimal/layout_header.png');}
 #bottom, #singleBottom{height:132px;}
 #minimalTop{height:90px;}
 #minimalBottom{height:91px;}
@@ -74,9 +78,11 @@ summary{cursor:pointer;color:#000000;}
 }
 .mContainer {background:url('layout_pieces/layout_singlecontainer.png');padding:5px 10px 5px 14px;height:700px;}
 .mContainer div{background:var(--divInset);width:90%;padding:5px;}
-.feedBlock{background:#ffffff !important;min-height:120px;max-height:120px;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;}
+/*RSS FEED START*/
+.feedBlock{background:#ffffff !important;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;padding:5px 0px 0px 0px;}
 .feed-title{display:none;}
-.title{
+/*RSS FEED END*/
+section > .title, section >  h4{
   background: var(--jellyGradient) !important;
   width:auto !important;
   box-shadow: inset 0px 0px 3px #ffffff, inset 0px 0px 3px #ffffff;
@@ -87,6 +93,9 @@ summary{cursor:pointer;color:#000000;}
   color:#ffffff;
   padding:3px;
 }
+section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hover, section > .title a:visited, section > h4 a:visited{color:#ffffff;}
+.readMore{background:linear-gradient(90deg, #00000000 0%, #00000060 30%, #00000060 100%);text-align:end;color:#ffffff;display:block;}
+.readMore a, .readMore a:hover, .readMore a:visited{color:#ffffff;}
 .demo{width:100%;}
 
 /* DESKTOP */
@@ -133,7 +142,6 @@ summary{cursor:pointer;color:#000000;}
     width:464px;
   }
   .rContainer div, .rContainerMinimal div{
-	background:var(--divInset);
 	width:95%;
   }
   .rContainer hr{

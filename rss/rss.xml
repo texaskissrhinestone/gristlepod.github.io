@@ -2,20 +2,17 @@
 <rss version="2.0">
   <channel>
     <generator>RSS Builder by B!Soft</generator>
-    <title>gristlepod update log</title>
+    <title>gristlepod store updates</title>
     <link>https://gristlepod.github.io/</link>
     <description>gristlepod is an illustrator and developer residing in the github hosting space. this feed records sitely updates, store news, and the like.</description>
     <language>en-ca</language>
     <webMaster>0ekekddddd@protonmail.com</webMaster>
     <copyright>sam @ gristlepod</copyright>
     <item>
-      <title>Market Blog Live: Who is Gristlepod?</title>
+      <title>Market Blog Live: Start!</title>
       <pubDate>Wed, 5 Feb 2025 16:54:49 -0600</pubDate>
-      <link>https://gristlepod.github.io/marketlog</link>
-      <description><![CDATA[Good afternoon, I am a freelance artist/graphic designer&nbsp;with a little experience in the&nbsp;merchandising&nbsp;scene. I've hoisted the beams for a new blog in regards to future product announcements as well as the convenience of my followers keeping track of the next charm, next print, next piece.
-<p>I design and manufacture from scratch a majority of the stuff I sell like stickers, prints, and cosplay props. I also make a&nbsp;side living&nbsp;doing web design, UI, and illustration.</p>
-<p>Two years ago, my social media presence was null so chances are most of my original viewers are here for my website development projects and non-artistic creations. I've secretly been maintaining a sizeable SNS following and have been&nbsp;networking my local art community, hence the "sleek" direction my site has taken. My indie web philosophies have never changed though; I just brought my healthy online habits to the wastelands. In the end, I still find refuge in what's really mine: my&nbsp;homepage and my local family.</p>
-<p>Of course, for the luddites, I've tailored an RSS feed completely for you. By subscribing to this feed, you may get early updates about my newest merch designs, when the Ko-fi store page has a new item, or when I open preorders.</p>
+      <description><![CDATA[Two years ago, my social media presence was null so chances are most of my original viewers are here for my website development projects and non-artistic creations. I've secretly been maintaining a sizeable SNS following and have been&nbsp;networking my local art community, hence the "sleek" direction my site has taken. My indie web philosophies have never changed though; I just brought my healthy online habits to the wastelands. In the end, I still find refuge in what's really mine: my&nbsp;homepage and my local family.
+<p>I've hoisted the beams for a new blog in regards to future product announcements as well as the convenience of my followers. Of course, for the luddites, I've tailored an RSS feed completely for you. By subscribing to this feed, you may get early updates about my newest merch designs, when the Ko-fi store page has a new item, or when I open preorders.</p>
 <p>Thanks for checking in.</p>]]></description>
     </item>
   </channel>
