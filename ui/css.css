@@ -74,7 +74,7 @@ summary{cursor:pointer;color:#000000;}
 }
 .mContainer {background:url('layout_pieces/layout_singlecontainer.png');padding:5px 10px 5px 14px;height:700px;}
 .mContainer div{background:var(--divInset);width:90%;padding:5px;}
-.insetBlock{background:#ffffff !important;min-height:120px;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;}
+.insetBlock{background:#ffffff !important;min-height:120px;max-height:120px;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;}
 .title{
   background: var(--jellyGradient) !important;
   width:auto !important;
