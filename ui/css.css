@@ -13,7 +13,7 @@
 html{scroll-behavior: smooth;scrollbar-color: #adb851 #ffffff;
     scrollbar-width: auto;}
 body{
-  background:url("backgrounds/landing_01.png") no-repeat,url('backgrounds/landing_02.png') no-repeat, url("backgrounds/mingrid.gif") repeat;
+  background:url("backgrounds/landing_01.png") no-repeat, url('backgrounds/landing_02.png') no-repeat, url("backgrounds/mingrid.gif") repeat;
   background-size:300px, 300px, auto;
   background-position:top left, bottom right, top;
   font-family: "MS PGothic", sans-serif; font-size:12px;
