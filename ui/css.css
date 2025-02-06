@@ -76,7 +76,10 @@ summary{cursor:pointer;color:#000000;}
 .rContainerMinimal img{
   margin:0px 5px 0px 5px;
 }
-.mContainer {background:url('layout_pieces/layout_singlecontainer.png');padding:5px 10px 5px 14px;height:700px;}
+.rContainer, .rContainerMinimal, .mContainer{
+  min-height:650px;
+}
+.mContainer {background:url('layout_pieces/layout_singlecontainer.png');padding:5px 10px 5px 14px;}
 .mContainer div{background:var(--divInset);width:90%;padding:5px;}
 /*RSS FEED START*/
 .feedBlock{background:#ffffff !important;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;padding:5px 0px 0px 0px;}
@@ -144,7 +147,7 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
   .rContainer div, .rContainerMinimal div{
 	width:95%;
   }
-  .rContainer hr{
+  .rContainer hr, .mContainer hr{
 	background: url('layout_pieces/hr_mobile.png'), no-repeat;
 	background-position:top left;
 	width:100%;
