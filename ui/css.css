@@ -30,7 +30,7 @@ li {
 }
 a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
-p, h1, h2, h3, details{padding:0px 10px 0px 10px;}
+p, h1, h2, h3, h4, details{padding:0px 10px 0px 10px;}
 ul{margin:0;padding:3px 0px 3px 35px;}
 b{color:#8f3b3b;}
 audio{filter:opacity(80%);}
@@ -74,7 +74,8 @@ summary{cursor:pointer;color:#000000;}
 }
 .mContainer {background:url('layout_pieces/layout_singlecontainer.png');padding:5px 10px 5px 14px;height:700px;}
 .mContainer div{background:var(--divInset);width:90%;padding:5px;}
-.insetBlock{background:#ffffff !important;min-height:120px;max-height:120px;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;}
+.feedBlock{background:#ffffff !important;min-height:120px;max-height:120px;border:3px #bcbcbc inset !important;border-radius:0px !important;overflow-y:scroll;}
+.feed-title{display:none;}
 .title{
   background: var(--jellyGradient) !important;
   width:auto !important;
