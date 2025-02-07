@@ -29,7 +29,7 @@
     <section class="lContainer">
 	</section>
     <section class="rContainer">
-	  <h4>&rarr; Log</h4>
+	  <h4>&rarr; Personal Log</h4>
 	  <table>
         <tr><td>
           <ul>
@@ -67,8 +67,18 @@
         </td></tr>
 	  </table>
 	  <hr>
-	  <center><a href="update/">update log</a> | <a href="market/">market log</a> | <a href="../rss/marketrss.xml">subscribe to the rss</a></center>
-    </section>
+	  <h4>&rarr; Latest Site Update</h4>
+	  <div class="feedBlock" style="min-height:140px;max-height:140px;">
+		<script src="https://rss.bloople.net/?url=https%3A%2F%2Fgristlepod.github.io%2Frss%2Frss.xml&limit=1&showtitle=false&type=js"></script>
+	  </div>
+	  <span class="readMore"><a href="log/update/">Read more @ update log</a></span>
+	  <hr>
+	  <h4>&rarr; Newest Store Post</h4>
+	  <div class="feedBlock" style="min-height:200px;max-height:200px;">
+		<script src="https://rss.bloople.net/?url=https%3A%2F%2Fgristlepod.github.io%2Frss%2Fmarketrss.xml&limit=1&showtitle=false&type=js"></script>
+	  </div>
+	  <span class="readMore"><a href="log/market/">Read more @ market log</a></span>
+	  <hr>
   </div>
   <section id="bottom">
     <img src="../ui/layout_pieces/layout_bottom_transparent.gif" alt="" usemap="#bottom_links">
