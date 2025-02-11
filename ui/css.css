@@ -34,8 +34,9 @@ li {
 }
 a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
-p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;font-size:12px;}
-h1, h2, h3, h4 {margin:0;}
+p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
+p, h1, h2, h4, details, span{font-size:12px;}
+h1, h2, h4 {margin:0;}
 h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;}
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 b{color:#8f3b3b;}
