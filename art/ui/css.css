@@ -34,32 +34,15 @@ body{
   margin:0 auto;
   color:var(--tosText)
 }
-a, a:visited{
-  text-decoration:none;
-  color:var(--primaryColor);
-  padding:3px;
-}
-a:hover{text-decoration:underline;
-}
-li{list-style-type: "→";
-}
+a, a:visited{text-decoration:none;color:var(--primaryColor);padding:3px;}
+a:hover{text-decoration:underline;}
+li{list-style-type: "→";}
 .txtBlock li::marker, .imgBlock li::marker, .labelBlock li::marker, .txtBlock li:nth-child(even), .imgBlock li:nth-child(even), .labelBlock li:nth-child(even){
   color:#ffffff80;
 }
-h2{
-  font-family: "hack", monospace, sans-serif;
-  margin:5px 10px 0px 10px;
-  letter-spacing:2px;
-  font-size:20px;
-}
-p, h3, li, span{
-  padding:0px 10px 0px 10px;
-}
-hr{
-  width:100px;
-  height: 6px;
-  border: 0;
-}
+h2{font-family: "hack", monospace, sans-serif;margin:5px 10px 0px 10px;letter-spacing:2px;font-size:20px;}
+p, h3, li, span{padding:0px 10px 0px 10px;}
+hr{width:100px;height: 6px;border: 0;}
 .txtBlock hr, .labelBlock hr{background:url("hrspike_gray.png");}
 .imgSumm hr{background:url("hrspike_green.png");}
 button{
@@ -74,11 +57,7 @@ button{
   border:0;
 }
 button a, button a:visited{color:#000000;}
-button:hover{
-  background:#10cc9d;
-  transition:.4s ease;
-  color:#04403e;
-}
+button:hover{background:#10cc9d;transition:.4s ease;color:#04403e;}
 nav{
   font-family: hack;
   background:#000000;
@@ -213,7 +192,7 @@ nav a:hover{
 	background-size:var(--flowerSignDesktop);
 	padding:23px 0px 0px 0px;
   }
-  #showcase img{height:45vw;}
+  #showcase img{height:45vw;max-height:400px;}
 }
 /* MOBILE */
 
@@ -232,7 +211,7 @@ nav a:hover{
     margin:10px var(--boxWidthMobile) var(--boxWidthMobile) var(--boxWidthMobile);
   }
   .flowerSign{visibility:hidden;} 
-  #showcase img{width:85vw;}
+  #showcase img{width:85vw;max-width:400px;}
 }
 /*ANIMATIONS*/
 @keyframes imgSummAnm{

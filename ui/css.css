@@ -1,7 +1,7 @@
 /* GLOBAL ROOT */
 :root{
   --linkColor:#616161;
-  --selectionColor:#b395ff;
+  --selectionColor:#00000030;
   --jellyGradient:linear-gradient(180deg, #b4cf91 5%,#65943d 39%, #adb851 92%);
   --jellySolid:#adb851;
  
@@ -20,7 +20,7 @@ body{
   font-family: "MS PGothic", sans-serif; font-size:12px;
   margin: 0 auto;
 }
-::selection {text-shadow: 0px 0px 4px var(--selectionColor),0px 0px 4px var(--selectionColor),0px 0px 4px var(--selectionColor);color:#ffffff;}
+::selection {background: var(--selectionColor);}
 hr {
   background-image: linear-gradient(to right, #00000000, #000000, #00000000);
   border: 0;
@@ -28,12 +28,15 @@ hr {
 }
 li {
   list-style-type: "→ ";
+  border-bottom:1px #00000030 solid;
+  margin:0px 10px  0px 0px;
 }
 a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
-p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
+p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;font-size:12px;}
 h1, h2, h3, h4 {margin:0;}
-ul{margin:0;padding:3px 0px 3px 35px;}
+h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;}
+ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 b{color:#8f3b3b;}
 audio{filter:opacity(80%);}
 section > div{
@@ -50,7 +53,7 @@ section > div{
 }
 table{width:100%;}
 td{padding:3px 4px 3px 4px;}
-td, .rContainer > ul{background-image:url("backgrounds/tone.png");}
+td, .rContainer > ul{background:url("backgrounds/tone.png");}
 details{cursor:text;color:#636363;}
 summary{cursor:pointer;color:#000000;}
 #body{width:644px;}
