@@ -29,7 +29,6 @@ hr {
 li {
   list-style-type: "→ ";
   border-bottom:1px #00000030 solid;
-  padding:3px 0px  3px 0px;
   margin:0px 10px  0px 0px;
 }
 a, a:visited{color:var(--linkColor);}
@@ -37,7 +36,7 @@ a:hover{color:#000000;}
 p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
 p, h1, h2, h4, details, span{font-size:12px;}
 h1, h2, h4 {margin:0;}
-h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;}
+h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;margin: 5px 0px 5px 0px;padding:2px 5px 2px 5px;}
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 b{color:#8f3b3b;}
 audio{filter:opacity(80%);}
