@@ -26,10 +26,7 @@ hr {
   border: 0;
   height:1px;
 }
-li {
-  list-style-type: "→ ";
-  border-bottom:1px #00000030 solid;
-  margin:0px 10px  0px 0px;
+li {list-style-type: "→ "; margin:0px 10px 0px 0px; border-bottom:1px dotted #00000070;
 }
 a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
@@ -102,7 +99,8 @@ section > .title, section >  h4{
 }
 section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hover, section > .title a:visited, section > h4 a:visited{color:#ffffff;}
 .readMore{background:linear-gradient(90deg, #00000000 0%, #00000060 30%, #00000060 100%);text-align:end;color:#ffffff;display:block;}
-.readMore a, .readMore a:hover, .readMore a:visited{color:#ffffff;}
+.readMore a, .readMore a:visited{color:#ffffff;text-decoration:none;}
+.readMore:hover{background:linear-gradient(90deg, #00000000 0%, #00000075 30%, #00000075 100%);text-align:end;color:#ffffff;}
 .demo{width:100%;}
 
 /* DESKTOP */
