@@ -1,0 +1,68 @@
+/* GLOBAL ROOT */
+:root{
+  --bgColor:#000000;
+  --heading:#c41d31;
+  --linkColor:#69666b;
+  --liLinkColor:#ffffff50;
+  --borderStyle:dotted;
+  --borderColor:#ffffff;
+}
+html{scroll-behavior: smooth;scrollbar-width: auto;}
+body, #body{background:var(--bgColor);box-shadow:0px 0px 5px 4px var(--bgColor);}
+body{
+  font-family: "MS PGothic"; font-size:12px;
+  color:var(--borderColor);
+  padding:0;
+  margin:0;
+}
+#body{width:644px;margin:0 auto;}
+#body section, #body div, .lContainer, .rContainer{
+  box-sizing:border-box;
+}
+hr {background-image: linear-gradient(to right, #ffffff00, #ffffff, #ffffff00);border: 0;height:1px;}
+ul li {list-style-type: "→ "; margin:0px 10px 0px 0px; border-bottom:1px var(--borderStyle) #ffffff90;
+}
+a, a:visited{color:var(--linkColor);text-decoration:none;cursor:pointer;}
+a:hover{color:#ffffff;}
+p, h1, h2, h3, h4, details, span{padding:6px 10px 3px 10px;}
+h1, h2, h4 {margin:0;border-bottom:1px var(--borderColor) var(--borderStyle);width:auto;color:var(--heading);}
+ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
+table{width:100%;}
+td{padding:3px 4px 3px 4px;}
+img:hover{cursor:crosshair;}
+#top, #map, #bottom{border:1px var(--heading);}
+#map, #bottom{padding:10px 0px 0px 0px;text-align:center;}
+#top{background:url("layout_pieces/top.png")no-repeat;border-style: none none var(--borderStyle) none;}
+#map{background:url('images/map_banner.png');border-style: var(--borderStyle) none none none;min-height:100px;}
+audio, audio:hover .playlist, .playlist div:hover{transition:.5s ease;}
+audio{width:100%;filter:opacity(20%);}
+audio:hover{filter:opacity(90%);}
+.playlist{background:none !important;color:#363636;}
+.playlist div:hover{color:#ffffff;}
+.feedBlock{background:#393940 !important;height:130px;border:3px #26262b inset !important;}
+.feed-title{display:none;}
+.inContent{min-height:600px;}
+.rContainer div {background:#ffffff10;padding:4px 0px 4px 0px;margin:0px;}
+.rContainer li a, li a:visited{color:var(--liLinkColor);}
+.demo{height:170px;}
+
+/* DESKTOP */
+
+@media(min-width:700px){
+  body{
+	background: url("images/verifier_shame.png") no-repeat bottom left, url("") no-repeat bottom right, var(--bgColor) !important;
+  }
+  .inContent{display:flex;}
+  .lContainer, .rContainer{border:1px var(--borderColor);}
+  .lContainer{background:url('images/luchino_nav.png') no-repeat;width:35%;background-position:top left;padding:100px 0px 0px 0px;border-style:var(--borderStyle) none var(--borderStyle) none}
+  .rContainer{width:65%; border-style:var(--borderStyle) none var(--borderStyle) var(--borderStyle);}
+}
+
+/* MOBILE */
+
+@media screen and (max-width:699px){
+  .inContent{display:block;}
+  .lContainer{border-bottom:var(--borderStyle) 1px var(--borderColor);}
+  .lContainer a{color:#363636 !important;}
+  .inline{display:flex;width:90%;margin:0 auto;}
+}

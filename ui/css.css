@@ -43,8 +43,6 @@ section > div{
 .rContainer > div, .rContainerMinimal > div, .mContainer > div{
   box-sizing:border-box;
   margin:5px auto 5px;
-}
-.rContainer > div, .rContainerMinimal > div, .mContainer > div{
   background:var(--divInset);
   box-shadow: inset 0px 0px 3px #ffffff;
   border-color: #3a371b;
@@ -159,7 +157,7 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
 
 /* MOBILE */
 @media screen and (max-width:749px){
-#body hr{
+  #body hr{
 	background: url('layout_pieces/hr_mobile.png');
 	background-position:top left;
 	background-repeat:no-repeat;
