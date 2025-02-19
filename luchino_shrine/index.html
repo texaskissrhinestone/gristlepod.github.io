@@ -12,7 +12,6 @@
 <body>
 <div id="body">
   <section id="top">
-    <img src="layout_pieces/top_transparent.png" alt="">
   </section>
   <div class="inContent">
     <section class="lContainer">
@@ -32,12 +31,12 @@
 	  <ul>
 	    <li><a onclick="selectLink('headcanonsList')">A List Of Headcanons</a></li>
 		<li><a onclick="selectLink('musicPlaylist')">Music Playlist</a></li>
+		<li><a onclick="selectLink('merchCollection')">Merchandise I Collected</a></li>
 	  </ul>
 	  <h4>The Sect of Luchinort</h4>
 	  <ul>
 	    <li><a onclick="selectLink('luchinort')">What Is Luchino x Norton?</a></li>
 	  </ul>
-	  <center><img src="images/hunt_luchino_40x40.gif" alt="Pixel Luchino" title="Luchino drawn and animated by Gristlepod."></center>
 	</section>
 	<section class="rContainer" id="display">
 	  <script>selectLink("entrance")</script>
@@ -54,16 +53,15 @@
 	  <img src="graphic_int/music_playlist.png" onmouseover="this.src='graphic_int/music_playlist-hover.png'" onmouseout="this.src='graphic_int/music_playlist.png'" onclick="selectLink('musicPlaylist')" alt="Music Playlist" title="Music Playlist">
   </div>
   <section id="bottom">
-    <p>church of luchino running since 2024</p>
-	<p style="color:#ffffff24;">Developed and updated by one fan. Identity V, Luchino Diruse, and official images featured on this site are properties sourced from NetEase® publisher. All content &copy; respective owners.</p>
+	<p><center><img src='images/hunt_luchino_40x40.gif' alt='Pixel Luchino' title='Luchino drawn and animated by Gristlepod.'></center>church of luchino running since 2024<br>
+	<normal style="color:#ffffff24;">Developed and updated by one fan. Identity V, Luchino Diruse, and official images featured on this site are properties sourced from NetEase® publisher. All content &copy; respective owners.</normal></p>
   </section>
 </div>
 <script>
 const audioFiles = [
   "audios/timexile_sliiime.mp3",
   "audios/anklepants_presetoftheradicalsydneydubstepfad.mp3",
-  "audios/timexile_listeningtree.mp3",
-  "audios/phatworld-genghiskhan.mp3"
+  "audios/timexile_listeningtree.mp3"
 ];
 let currentAudioIndex = 0;
 const audioURL = audioFiles;
