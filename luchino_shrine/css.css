@@ -2,8 +2,11 @@
 :root{
   --bgColor:#000000;
   --heading:#ffffff;
+  --headingBorder:#c20c33;
   --linkColor:#69666b;
+  --linkHover:#851b23;
   --liLinkColor:#ffffff50;
+  --liLinkBorder:#911971;
   --borderStyle:dotted;
   --borderColor:#ffffff;
 }
@@ -17,16 +20,16 @@ body{
   margin:0;
 }
 #body{width:644px;margin:0 auto;}
-#body section, #body div, .lContainer, .rContainer{
-  box-sizing:border-box;
-}
+#body section, #body div, .lContainer, .rContainer{box-sizing:border-box;}
 hr {background-image: linear-gradient(to right, #ffffff00, #ffffff, #ffffff00);border: 0;height:1px;}
 ul li {list-style-type: "→ "; margin:0px 10px 0px 0px; border-bottom:1px var(--borderStyle) #ffffff90;
 }
 a, a:visited{color:var(--linkColor);text-decoration:none;cursor:pointer;}
-a:hover{color:#ffffff;}
-p, h1, h2, h3, h4, details, span{padding:6px 10px 3px 10px;}
-h1, h2, h4 {margin:0;border-bottom:1px var(--borderColor) var(--borderStyle);width:auto;color:var(--heading);text-shadow:#bgColor;}
+a:hover{color:var(--linkHover);}
+h4 a, h4 a:hover{color:#ffffff;text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder);}
+h1, h2, h3, h4, details, span{padding:6px 10px 3px 10px;}
+p{padding:0px 10px 0px 10px;}
+h1, h2, h4 {margin:0;border-bottom:1px var(--borderColor) var(--borderStyle);width:auto;color:var(--heading); text-shadow:#bgColor;text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 table{width:100%;}
 td{background-size:cover !important;padding:3px;color:#363636;vertical-align:top;}
@@ -34,31 +37,30 @@ td:hover{color:#ffffff;transition:.5s ease;}
 img:hover{cursor:crosshair;}
 #top{min-height:128px;}
 #top, #map, #bottom{border:1px var(--heading);}
-#map, #bottom{padding:10px 0px 0px 0px;text-align:center;}
+#map, #bottom{min-height:200px;padding:10px 0px 0px 0px;text-align:center;}
 #top{background:url("layout_pieces/top.png")no-repeat;border-style: none none var(--borderStyle) none;}
-#map{background:url('images/map_banner.png')no-repeat top left;border-style: var(--borderStyle) none none none;min-height:100px;}
+#map{background:url('images/map_banner.png')no-repeat top left;border-style: var(--borderStyle) none none none;}
 audio, audio:hover .playlist, .playlist div:hover{transition:.5s ease;}
-audio{width:100%;filter:opacity(20%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
-audio:hover{filter:opacity(90%);}
-.feedBlock{background:#393940 !important;height:130px;border:3px #26262b inset !important;}
 .feed-title{display:none;}
 .inContent{min-height:600px;}
+.lContainer audio{width:100%;}
 .rContainer div, td {background:#ffffff10;padding:2px 0px 4px 0px;margin:0px;}
-.rContainer li a, li a:visited{color:var(--liLinkColor);}
 .rContainer img{max-width:100%;}
 .demo{height:170px;}
 
 /* DESKTOP */
 
 @media(min-width:700px){
-  body{background: url("images/screencaps/verifier_shame.png") no-repeat bottom left, url("layout_pieces/background_mark.png") no-repeat top right, var(--bgColor) !important;
+  body{background: url("images/screencaps/verifier_shame.png") no-repeat bottom left,url("images/screencaps/stonemason_smiling.png") no-repeat bottom right, url("layout_pieces/background_mark.png") no-repeat top right, var(--bgColor) !important;
   }
+  audio{width:100%;filter:opacity(20%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
+  audio:hover{filter:opacity(90%);}
   table td:nth-child(2){width:160px !important; height:160px;}
   .inContent{display:flex;}
   .lContainer, .rContainer{border:1px var(--borderColor);}
-  .lContainer{background:url('images/luchino_nav.png') no-repeat;width:35%;background-position:top left;padding:100px 0px 0px 0px;border-style:var(--borderStyle) none var(--borderStyle) none}
-  .rContainer{width:65%; border-style:var(--borderStyle) none var(--borderStyle) var(--borderStyle);}
-  .inContent .rContainer > h4{background:linear-gradient(90deg, #00000000 0%, var(--bgColor) 80%,var(--bgColor) 100%), url("layout_pieces/scales_texture.png");}
+  .lContainer{background:url('layout_pieces/nav.png') no-repeat, url('layout_pieces/nav_footer.png') no-repeat;width:35%;background-position:top left;background-position:0% 0%, 0% 100%;padding:100px 0px 100px 0px;}
+  .rContainer{width:65%; border-style:none none none var(--borderStyle);}
+  .inContent .rContainer > h4{background:linear-gradient(90deg, #00000000 0%, #00000000 70%,var(--bgColor) 100%), url("layout_pieces/scales_texture.png");}
   .inContent .lContainer > h4{background:linear-gradient(-90deg, #00000000 0%, var(--bgColor) 95%,var(--bgColor) 100%), url("layout_pieces/scales_texture.png");}
 }
 
