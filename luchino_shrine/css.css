@@ -11,7 +11,7 @@
   --borderColor:#ffffff;
 }
 html{scroll-behavior: smooth;scrollbar-width: auto;}
-body, #body{background:var(--bgColor);box-shadow:0px 0px 5px 4px var(--bgColor);}
+#body{background:var(--bgColor);box-shadow:0px 0px 5px 4px var(--bgColor);}
 body{
   font-family: "MS PGothic", sans-serif; font-size:12px;
   image-rendering: crisp-edges;
@@ -41,7 +41,7 @@ img:hover{cursor:crosshair;}
 #map{background:url('images/map_banner.png')no-repeat top left;}
 audio, audio:hover .playlist, .playlist div:hover{transition:.5s ease;}
 .feed-title{display:none;}
-.inContent{min-height:600px;}
+.inContent{min-height:600px;padding:0px 10px 0px 5px;}
 .lContainer audio{width:100%;}
 .rContainer div, td {background:#ffffff10;padding:2px 0px 4px 0px;margin:0px;}
 .rContainer img{max-width:100%;}
@@ -50,7 +50,7 @@ audio, audio:hover .playlist, .playlist div:hover{transition:.5s ease;}
 /* DESKTOP */
 
 @media(min-width:700px){
-  body{background: url("images/screencaps/verifier_shame.png") no-repeat bottom left,url("images/screencaps/stonemason_smiling.png") no-repeat bottom right, url("layout_pieces/background_mark.png") no-repeat top right, var(--bgColor) !important;
+  body{background: url("images/screencaps/verifier_shame.png") no-repeat bottom left, linear-gradient(180deg,#00000000 0%, var(--bgColor) 70%, var(--bgColor) 100%), url("layout_pieces/bg_blackscales.gif"), var(--bgColor) !important;
   }
   h1, h2, h3, h4, details, span{padding:4px 10px 4px 10px;}
   audio{width:100%;filter:opacity(20%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
