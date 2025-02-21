@@ -32,20 +32,26 @@ h1, h2, h4 {margin:0;width:auto;color:var(--heading); text-shadow:#bgColor;text-
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 table{width:100%;}
 td{background-size:cover !important;padding:3px;color:#363636;vertical-align:top;}
-td:hover{color:#ffffff;transition:.5s ease;}
+td:hover{color:#ffffff;transition:.3s ease;}
 img:hover{cursor:crosshair;}
 #top{min-height:128px;}
 #top, #map, #bottom{border:1px var(--heading);}
 #map, #bottom{min-height:200px;padding:10px 0px 0px 0px;text-align:center;}
-#top{background:url("layout_pieces/top.png")no-repeat;}
-#map{background:url('images/map_banner.png')no-repeat top left;}
-audio, audio:hover .playlist, .playlist div:hover{transition:.5s ease;}
+#top{background:url("layout_pieces/top.png")no-repeat;border-style: none none var(--borderStyle) none;}
+#map{background:url('images/map_banner.png')no-repeat top left;border-style: var(--borderStyle) none none none;}
+audio, audio:hover .playlist, .playlist div:hover,.gallery img{transition:.5s ease;}
 .feed-title{display:none;}
-.inContent{min-height:600px;padding:0px 10px 0px 5px;}
+.inContent{min-height:600px;padding:0px 10px 0px 5px;display:flex;}
+.lContainer, .rContainer{border:1px var(--borderColor);}
 .lContainer audio{width:100%;}
+.rContainer{border-style:none none none var(--borderStyle);}
 .rContainer div, td {background:#ffffff10;padding:2px 0px 4px 0px;margin:0px;}
 .rContainer img{max-width:100%;}
+.inContent .lContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%, var(--bgColor) 5%, #00000000 15%, #00000000 80%, var(--bgColor) 95%, var(--bgColor) 100%), url("layout_pieces/boneflute_scales_texture-flip.gif") repeat-x;}
+.inContent .rContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%,var(--bgColor) 5%, #00000000 15%, #00000000 80%, var(--bgColor) 95%,var(--bgColor) 100%), url("layout_pieces/boneflute_scales_texture.gif")}
 .demo{height:170px;}
+.gallery img{filter:brightness(40%);}
+.gallery img:hover{filter:brightness(100%);}
 
 /* DESKTOP */
 
@@ -56,28 +62,19 @@ audio, audio:hover .playlist, .playlist div:hover{transition:.5s ease;}
   audio{width:100%;filter:opacity(20%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
   audio:hover{filter:opacity(90%);}
   table td:nth-child(2){width:160px !important; height:160px;}
-  #top{border-style: none none var(--borderStyle) none;}
-  #map{border-style: var(--borderStyle) none none none;}
-  .inContent{display:flex;}
-  .lContainer, .rContainer{border:1px var(--borderColor);}
   .lContainer{background:url('layout_pieces/nav.png') no-repeat, url('layout_pieces/nav_footer.png') no-repeat;width:35%;background-position:top left;background-position:0% 0%, 0% 100%;padding:100px 0px 130px 0px;}
-  .rContainer{width:65%; border-style:none none none var(--borderStyle);}
-  .inContent .lContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%, var(--bgColor) 5%, #00000000 15%, #00000000 80%, var(--bgColor) 95%, var(--bgColor) 100%), url("layout_pieces/boneflute_scales_texture-flip.gif") repeat-x;}
-  .inContent .rContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%,var(--bgColor) 5%, #00000000 15%, #00000000 80%, var(--bgColor) 95%,var(--bgColor) 100%), url("layout_pieces/boneflute_scales_texture.gif")}
+  .rContainer{width:65%;}
 }
 
 /* MOBILE */
 
 @media screen and (max-width:699px){
-  body{font-family: "MS PGothic", sans-serif; font-size:16px !important;}
+  body{font-family: "MS PGothic", sans-serif; font-size:12px !important;}
   table td:nth-child(2){width:35vw !important; height:35vw;}
   h1, h2, h3, h4, details, span{padding:0px 10px 5px 10px;}
   #body{width:100%;}
   #top{background-size:100%;}
-  .inContent{display:block;width:90%;margin:0 auto;}
+  .inContent{width:97%;margin:0 auto;}
   .inContent section{margin:0px 0px 0px 0px;}
-  .lContainer{border-bottom:var(--borderStyle) 1px var(--borderColor);}
   .lContainer a{color:#363636 !important;}
-  .inContent .lContainer > h4, .inContent .rContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%, #00000000 5%, #00000000 95%,var(--bgColor) 100%), url("layout_pieces/boneflute_scales_texture.png");}
-  .inline{display:flex;width:90%;margin:0 auto;}
 }
