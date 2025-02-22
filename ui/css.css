@@ -4,6 +4,7 @@
   --selectionColor:#00000030;
   --jellyGradient:linear-gradient(180deg, #b4cf91 5%,#65943d 39%, #adb851 92%);
   --jellySolid:#adb851;
+  --headingBorder:#2f5730;
  
   --divSolid:linear-gradient(0deg, #ededed 1%, #ffffff 30%);
   --divInset:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
@@ -29,8 +30,10 @@ a, a:visited{color:var(--linkColor);}
 a:hover{color:#000000;}
 p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
 p, h1, h2, h4, details, span, li, td{font-size:12px;border:1px #000000;}
+h1, h2, h4{margin:0;}
 h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;margin: 5px 0px 5px 0px;padding:2px 5px 2px 5px;}
-h1, h2, h4 {margin:0;}
+.rContainer > h4{text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
+ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}}
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 li {list-style-type: "→ "; margin:0px 10px 0px 0px;}
 td{border-style:dotted dotted dotted dotted;}
@@ -53,7 +56,6 @@ summary{cursor:pointer;color:#000000;}
 #body{width:644px;}
 #minimalBody{width:660px;margin:15px auto 0px auto;}
 #body, #minimalBody{
-  animation:bootDrop 1s linear;
   translate:0px 0px;
   opacity:1;
   margin:0 auto;
@@ -187,10 +189,4 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
 	width:95%;
   }
   .rContainer div, .rContainerMinimal div{background:var(--divInset);}
-}
-
-@keyframes bootDrop{
-  0%{opacity:0;translate:0px -8px;}
-  60%{opacity:0;translate:0px -8px;}
-  100%{opacity:1;translate:0px 0px;}
 }
