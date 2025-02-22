@@ -34,10 +34,9 @@ table{width:100%;}
 td{background-size:cover !important;padding:3px;color:#363636;vertical-align:top;}
 td:hover{color:#ffffff;transition:.3s ease;}
 img:hover{cursor:crosshair;}
-#top{min-height:128px;}
 #top, #map, #bottom{border:1px var(--heading);}
 #map, #bottom{min-height:200px;padding:10px 0px 0px 0px;text-align:center;}
-#top{background:url("layout_pieces/top.png")no-repeat;border-style: none none var(--borderStyle) none;}
+#top{background:url("layout_pieces/top.png")no-repeat bottom left;border-style: none none var(--borderStyle) none;min-height:128px;}
 #map{background:url('images/map_banner.png')no-repeat top left;border-style: var(--borderStyle) none none none;}
 audio, audio:hover .playlist, .playlist div:hover,.gallery img{transition:.5s ease;}
 .inContent{min-height:600px;padding:0px 10px 0px 5px;display:flex;}
