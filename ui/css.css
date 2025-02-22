@@ -53,6 +53,9 @@ summary{cursor:pointer;color:#000000;}
 #body{width:644px;}
 #minimalBody{width:660px;margin:15px auto 0px auto;}
 #body, #minimalBody{
+  animation:bootDrop 1s linear;
+  translate:0px 0px;
+  opacity:1;
   margin:0 auto;
 }
 #body section, #body div, #minimalBody section, #minimalBody div{
@@ -184,4 +187,10 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
 	width:95%;
   }
   .rContainer div, .rContainerMinimal div{background:var(--divInset);}
+}
+
+@keyframes bootDrop{
+  0%{opacity:0;translate:0px -8px;}
+  60%{opacity:0;translate:0px -8px;}
+  100%{opacity:1;translate:0px 0px;}
 }
