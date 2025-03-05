@@ -1,10 +1,10 @@
 /* GLOBAL ROOT */
 :root{
-  --linkColor:#616161;
+  --linkColor:#4d62b3;
   --selectionColor:#00000030;
-  --jellyGradient:linear-gradient(180deg, #b4cf91 5%,#65943d 39%, #adb851 92%);
-  --jellySolid:#adb851;
-  --headingBorder:#2f5730;
+  --jellyGradient:linear-gradient(180deg, #baddff 5%,#80c1ff 39%, #c7e4f2 92%);
+  --jellySolid:#616161;
+  --headingBorder:#5871d1;
  
   --divSolid:linear-gradient(0deg, #ededed 1%, #ffffff 30%);
   --divInset:linear-gradient(180deg, #d6d6d670 0%, #ffffff 100%);
@@ -26,7 +26,7 @@ hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);b
 }
 audio{width:100%;filter:opacity(30%);border:var(--borderColor) 1px;border-style: none none var(--borderStyle) none;}
 audio:hover{filter:opacity(50%);}
-a, a:visited{color:var(--linkColor);}
+a, a:visited{color:var(--linkColor);text-decoration:none;border:1px #000000; border-style:none none dotted none;}
 a:hover{color:#000000;}
 p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
 p, h1, h2, h4, details, span, li, td{font-size:12px;border:1px #000000;}
@@ -36,7 +36,7 @@ h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;margin: 5px
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 li {list-style-type: "→ "; margin:0px 10px 0px 0px;}
 td{border-style:dotted dotted dotted dotted;}
-b{color:#8f3b3b;}
+b{color:var(--jellySolid);}
 section > div{
   border:solid 1px;
 }
@@ -98,9 +98,8 @@ section > .title, section >  h4{
   padding:3px;
 }
 section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hover, section > .title a:visited, section > h4 a:visited{color:#ffffff;}
-.readMore{background:linear-gradient(90deg, #00000000 0%, #00000060 30%, #00000060 100%);text-align:end;color:#ffffff;display:block;}
+.readMore{background:linear-gradient(90deg, #00000000 0%, #00000030 30%, #00000030 100%);text-align:end;display:block;}
 .readMore a, .readMore a:visited{color:#ffffff;text-decoration:none;}
-.readMore:hover{background:linear-gradient(90deg, #00000000 0%, #00000075 30%, #00000075 100%);text-align:end;color:#ffffff;}
 .demo{width:100%;}
 
 /* DESKTOP */
