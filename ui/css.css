@@ -33,7 +33,6 @@ p, h1, h2, h4, details, span, li, td{font-size:12px;border:1px #000000;}
 h1, h2, h4{margin:0;}
 h3{background:url("backgrounds/tone.png"), #00000020;color:#00000090;margin: 5px 0px 5px 0px;padding:2px 5px 2px 5px;}
 .rContainer > h4{text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
-ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}}
 ul{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
 li {list-style-type: "→ "; margin:0px 10px 0px 0px;}
 td{border-style:dotted dotted dotted dotted;}
