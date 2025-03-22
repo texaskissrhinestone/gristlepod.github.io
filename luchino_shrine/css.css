@@ -43,14 +43,18 @@ img:hover{cursor:crosshair;}
 #map, #bottom{min-height:200px;padding:10px 0px 0px 0px;text-align:center;}
 #top{background:url("layout_pieces/top.png")no-repeat bottom left;border-style: none none var(--borderStyle) none;min-height:128px;}
 #map{background:url('layout_pieces/map_banner.png')no-repeat top left;border-style: var(--borderStyle) none none none;}
+#bottom{color:#878787;}
 audio, audio:hover .playlist, .playlist div:hover,.gallery img{transition:.5s ease;}
 .inContent{min-height:600px;padding:0px 10px 0px 5px;display:flex;}
 .lContainer, .rContainer{border:1px var(--borderColor);}
+.lContainer > div, .rContainer >  div, .lContainer > td, .rContainer > td, .lContainer > ul, .rContainer > ul{background:var(--rContainerBg);}
 .lContainer audio{width:100%;}
+.rContainer div, .lContainer div, .lContainer ul, td {border: 1px var(--borderColor);}
 .rContainer{border-style:none none none var(--borderStyle);}
-.rContainer div, td {background:var(--rContainerBg); border: 1px var(--borderColor); padding:2px 0px 4px 0px;margin:3px 0px 3px 0px;}
-.rContainer td{border-style:dotted dotted dotted dotted;}
-.rContainer div{border-style:dotted dotted dotted none;}
+.rContainer div, td {padding:2px 0px 4px 0px;margin:3px 0px 3px 0px;}
+.rContainer > td{border-style:var(--borderStyle) var(--borderStyle) var(--borderStyle) var(--borderStyle);}
+.lContainer > ul{border-style:var(--borderStyle) none var(--borderStyle) var(--borderStyle);}
+.rContainer > div{border-style:var(--borderStyle) var(--borderStyle) var(--borderStyle) none;}
 .rContainer img{max-width:100%;}
 .inContent .lContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%, var(--bgColor) 5%, var(--bgColorOpacity) 15%, var(--bgColorOpacity) 80%, var(--bgColor) 95%, var(--bgColor) 100%), url("layout_pieces/bill_scales_texture-flip.gif") repeat-x;}
 .inContent .rContainer > h4{background:linear-gradient(90deg, var(--bgColor) 0%,var(--bgColor) 5%, var(--bgColorOpacity) 15%, var(--bgColorOpacity) 80%, var(--bgColor) 95%,var(--bgColor) 100%), url("layout_pieces/bill_scales_texture.gif")repeat-x}
