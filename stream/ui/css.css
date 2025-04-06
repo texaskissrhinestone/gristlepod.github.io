@@ -8,7 +8,7 @@
 }
 @font-face {font-family: apestron; src: url("../../fonts/retrobyte.ttf");}
 body{
-  background:linear-gradient(180deg, var(--primaryColor) 0%, #00000000 30%, #00000000 80%, var(--primaryColor) 100%), url("backgrounds/metalplates.png"), var(--primaryColor);
+  background:linear-gradient(180deg, var(--primaryColor) 0%, #00000099 30%, #00000099 80%, var(--primaryColor) 100%), url("backgrounds/metalplates.png"), var(--primaryColor);
   font-family:"ms pgothic";
   font-size:12px;
   margin:20px 0px 0px 0px;
