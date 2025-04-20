@@ -18,8 +18,7 @@ html{scroll-behavior: smooth;scrollbar-color: var(--jellySolid) #ffffff;
 body{
   background:url("backgrounds/landing_01.png") no-repeat, url('backgrounds/landing_02.png') no-repeat, url("backgrounds/mingrid.gif") repeat;
   background-size:300px, 300px, auto;
-  background-position:top left, bottom right, top;
-  font-family: "MS PGothic", sans-serif; font-size:12px;
+  background-position:top left, bottom right, top;font-size:12px;
   margin: 0 auto;
 }
 ::selection {background: var(--selectionColor);}
@@ -30,7 +29,7 @@ audio:hover{filter:opacity(50%);}
 a, a:visited{color:var(--linkColor);text-decoration-style: dotted;border:1px #000000;}
 a:hover{color:#000000;}
 p, h1, h2, h3, h4, details, span{padding:0px 10px 0px 10px;}
-p, h1, h2, h4, details, span, li, td{font-size:12px;border:1px #000000;}
+p, h1, h2, h4, details, span, li, td{border:1px #000000;}
 h1, h2, h4{margin:0;}
 h3{background:url("backgrounds/tone.png"), #00000020; color:#00000090; margin: 5px 0px 5px 0px; padding:2px 5px 2px 5px;}
 .rContainer > h4{text-shadow:-1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
@@ -109,9 +108,8 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
 /* DESKTOP */
 
 @media(min-width:750px){
-  section div{
-	border-radius:6px;
-  }
+  body{font-family: "MS PGothic", sans-serif;}
+  section div{border-radius:6px;}
   .inContent, .inContentMinimal{display:flex;min-height:200px;}
   .inContentSingle{display:block;}
   #top{background:url('layout_pieces/layout_header_multi.png');}
@@ -164,6 +162,7 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
 @media screen and (max-width:749px){
   #body hr{
 	background: url('layout_pieces/hr_mobile.png');
+	font-family: 'Inconsolata', monospace;
 	background-position:top left;
 	background-repeat:no-repeat;
 	max-width:634px;
