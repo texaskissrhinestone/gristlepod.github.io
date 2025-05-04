@@ -1,0 +1,17 @@
+@font-face {font-family: hack; src: url("../fonts/hack-regular.woff") format("woff");}
+body{
+  background: url('layout_pieces/dotbg.png'),#a4c4a3;
+  font-family:'ms pgothic'; font-size:12px;
+}
+div, h1, h2, h3, h4{box-sizing:border-box;}
+h1, h2, h3, h4{font-family: hack;}
+h1, h2, h3, h4{padding:0px; margin:0px;}
+a, a:hover, a:visited{color:#4a8061; text-decoration:underline dotted;}
+#body{
+  background:#ffffffa8;
+  border:2px #000000 dotted;
+  margin:0 auto;
+  max-width:800px;
+  padding:5px 10px 5px 10px;
+  width:80vw;
+}
