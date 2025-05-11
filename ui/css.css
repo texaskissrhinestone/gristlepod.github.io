@@ -160,9 +160,9 @@ section > .title a, section > h4 a, section > .title a:hover, section > h4 a:hov
 
 /* MOBILE */
 @media screen and (max-width:749px){
+  body{font-family: sans-serif; font-size:14px;}
   #body hr{
 	background: url('layout_pieces/hr_mobile.png');
-	font-family: 'Inconsolata', monospace;
 	background-position:top left;
 	background-repeat:no-repeat;
 	max-width:634px;

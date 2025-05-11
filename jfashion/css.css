@@ -35,7 +35,7 @@ a, a:visited{color:var(--linkColor);text-decoration:underline dotted;cursor:poin
 a:hover{color:var(--linkHover);}
 h1, h2, h3, h4, details, span{padding:4px 10px 5px 10px;}
 h4 a, h4 a:hover{color:#ffffff;text-shadow: -1px -1px 0 var(--liLinkBorder), 1px -1px 0 var(--liLinkBorder), -1px 1px 0 var(--liLinkBorder), 1px 1px 0 var(--liLinkBorder);}
-p{padding:0px 10px 0px 10px;}
+p,center{padding:0px 10px 0px 10px;}
 b{color:#c29136;}
 h1, h2, h4 {margin:0;width:auto;color:var(--heading); text-shadow:#bgColor;text-shadow: -1px -1px 0 var(--headingBorder), 1px -1px 0 var(--headingBorder), -1px 1px 0 var(--headingBorder), 1px 1px 0 var(--headingBorder);}
 ul, ol{margin:0px 0px 3px 0px;padding:3px 0px 3px 35px;}
@@ -55,7 +55,7 @@ audio, audio:hover, .playlist, .gallery img{transition:.5s ease;}
 .rContainer div, .lContainer div, .lContainer ul, td {border: 1px var(--borderColor);}
 .inContent .lContainer > h4, .inContent .rContainer > h4{background: url("layout_pieces/floral_border.png") repeat-x;}
 .rContainer img{max-width:290px;}
-.demo{max-width:290px;border:1px var(--borderStyle2) var(--borderColor);}
+.demo{max-width:290px;border:1px var(--borderStyle2) var(--borderColor); margin:2px 2px 2px 2px;}
 
 /* DESKTOP */
 
@@ -76,7 +76,7 @@ audio, audio:hover, .playlist, .gallery img{transition:.5s ease;}
 /* MOBILE */
 
 @media screen and (max-width:699px){
-  body{font-family: "MS PGothic", sans-serif; font-size:12px !important;}
+  body{font-family: "sans", sans-serif; font-size:16px !important;}
   table td:nth-child(2){width:35vw !important; height:35vw;}
   #body{width:95%;}
   #top{background-size:100%;}
