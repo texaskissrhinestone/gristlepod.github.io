@@ -27,7 +27,7 @@ body{
   margin:0;
 }
 #body{width:644px;margin:0 auto;}
-#body section, #body div, .lContainer, .rContainer{box-sizing:border-box;}
+#body section, #body div, .lContainer, .rContainer, img{box-sizing:border-box;}
 hr {background-image: linear-gradient(to right, #00000000, #000000, #00000000);border: 0;height:1px;}
 ul li {list-style-type: "→ "; margin:0px 10px 0px 0px;
 }
@@ -55,6 +55,7 @@ audio, audio:hover, .playlist, .gallery img{transition:.5s ease;}
 .rContainer div, .lContainer div, .lContainer ul, td {border: 1px var(--borderColor);}
 .inContent .lContainer > h4, .inContent .rContainer > h4{background: url("layout_pieces/floral_border.png") repeat-x;}
 .rContainer img{max-width:290px;}
+.gallery img{width:49%;position:relative;} .gallery img:hover{transform:scale(140%);z-index:10;}
 .demo{max-width:290px;border:1px var(--borderStyle2) var(--borderColor); margin:2px 2px 2px 2px;}
 
 /* DESKTOP */
